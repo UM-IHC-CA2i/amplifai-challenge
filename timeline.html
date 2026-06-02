@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timeline — AMPLIFAI Challenge</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI — Home">
+          <img
+            src="assets/img/logo-mini-light.svg"
+            alt=""
+            width="200"
+            height="56"
+            class="navbar-brand-logo"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+            <li class="nav-item"><a class="nav-link" href="rules.html">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
+            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
+          </ul>
+          <a
+            class="btn btn-amplifai btn-sm px-3"
+            href="https://www.codabench.org/competitions/14290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Codabench</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="container section-block">
+      <h1 class="display-font fw-bold mb-4">Timeline</h1>
+      <p class="text-muted-amplifai">
+        Planned schedule for the challenge.
+      </p>
+      <div class="table-responsive card card-amplifai p-3 overflow-hidden">
+        <table class="table table-timeline mb-0">
+          <tbody>
+            <tr>
+              <th class="ps-4 py-3 bg-white border-end">April 1, 2026</th>
+              <td class="py-3">Challenge website and registration opens</td>
+            </tr>
+            <tr>
+              <th class="ps-4 py-3 bg-light border-end">June 5, 2026</th>
+              <td class="py-3">Training Data Batch 1 Release (150 cases)</td>
+            </tr>
+            <tr>
+              <th class="ps-4 py-3 bg-white border-end">June 19, 2026</th>
+              <td class="py-3">Training Data Batch 2 Release (150 cases)</td>
+            </tr>
+            <tr>
+              <th class="ps-4 py-3 bg-light border-end">June 26, 2026</th>
+              <td class="py-3">Training Data Final Release (remaining training and validation set)</td>
+            </tr>
+            <tr>
+              <th class="ps-4 py-3 bg-white border-end">July 10, 2026</th>
+              <td class="py-3">Model Submission Portal Opens</td>
+            </tr>
+            <tr>
+              <th class="ps-4 py-3 bg-light border-end">September 1, 2026</th>
+              <td class="py-3">Team registration closes</td>
+            </tr>
+            <tr>
+              <th class="ps-4 py-3 bg-white border-end">September 15, 2026</th>
+              <td class="py-3">Final Submission Deadline</td>
+            </tr>
+            <tr>
+              <th class="ps-4 py-3 bg-light border-end">September 27 or October 1, 2026</th>
+              <td class="py-3">Challenge day</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container text-center">
+        <p class="mb-1"><span id="y"></span> AMPLIFAI Challenge</p>
+        <p class="mb-0">
+          <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer"
+            >Competition on Codabench</a
+          >
+          ·
+          <a href="https://docs.codabench.org/" target="_blank" rel="noopener noreferrer">Codabench documentation</a>
+          ·
+          <a href="rules.html">Terms &amp; Conditions</a>
+          ·
+          <a href="mailto:amplifai@som.umaryland.edu">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("y").textContent = "© " + new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms &amp; Conditions — AMPLIFAI Challenge</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI — Home">
+          <img
+            src="assets/img/logo-mini-light.svg"
+            alt=""
+            width="200"
+            height="56"
+            class="navbar-brand-logo"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="rules.html">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
+            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
+          </ul>
+          <a
+            class="btn btn-amplifai btn-sm px-3"
+            href="https://www.codabench.org/competitions/14290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Codabench</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="container section-block">
+      <h1 class="display-font fw-bold mb-2">Terms &amp; Conditions</h1>
+      <p class="text-muted-amplifai mb-4">
+        Official terms and conditions for participation in the AMPLIFAI challenge. 
+      </p> 
+      <p class="mb-4" id="registration">
+        Participating Teams must
+        <a
+          href="https://forms.office.com/Pages/ResponsePage.aspx?id=pglwcd4gGkaIlAMSo5XKyWO--qpY16BHkqFYmo-jrRdURDM5R0c0VkZRMTM4S1lDQlo2MVZDT1VXTy4u"
+          target="_blank"
+          rel="noopener noreferrer"
+          >register here</a
+        >, agree to the AMPLIFAI Terms section, and apply for registration on the
+        <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer"
+          >Codabench platform</a
+        >. Approval will be communicated in the form of an email to the primary team contact. Participating teams must
+        register by September 1, 2026.
+      </p>
+      
+
+      <article class="rules-prose">
+        <h2 class="display-font h5">Eligibility and registration</h2>
+        <p>
+          Participation in AMPLIFAI requires approval by the organizing team. Participants must provide accurate
+          information regarding their name, organization, nationality, and contact information. The AMPLIFAI organizers
+          reserve the right to approve or deny participation at their discretion.
+        </p>
+
+        <h2 class="display-font h5">Data access and restrictions</h2>
+        <p>
+          This challenge uses medical imaging data derived from U.S.-based clinical sources. These data are not publicly
+          distributed. All model evaluation is performed within a secure computing environment controlled by the organizers.
+          Participants will not be granted direct access to the evaluation dataset.
+        </p>
+        <p>Participants agree that they will not:</p>
+        <ul>
+          <li>Attempt to access, download, reconstruct, or infer the protected evaluation data</li>
+          <li>Attempt to extract sensitive information through model behavior or repeated submissions</li>
+          <li>Use the challenge platform to derive patient-level or identifiable information</li>
+        </ul>
+
+        <h2 class="display-font h5">Submission and execution policy</h2>
+        <p>All submissions:</p>
+        <ul>
+          <li>Must be self-contained and executable within the provided environment</li>
+          <li>Must not attempt to access external systems, open network connections, or write unauthorized outputs</li>
+          <li>Must not attempt to reverse engineer the dataset</li>
+          <li>Must not perform adversarial attacks aimed at extracting data</li>
+        </ul>
+        <p>
+          The organizers reserve the right to inspect, reject, or terminate any submission that violates these policies.
+        </p>
+
+        <h2 class="display-font h5">Output restriction</h2>
+        <p>Participants will only receive aggregate evaluation metrics.</p>
+        <p>
+          No raw outputs, intermediate data, or derived artifacts (including but not limited to segmentation masks, feature
+          embeddings, or reconstructed images) will be returned.
+        </p>
+
+        <h2 class="display-font h5">Monitoring and enforcement</h2>
+        <p>All submissions and activities may be logged and monitored for security and compliance purposes.</p>
+
+        <h2 class="display-font h5">Responsible use</h2>
+        <p>Participants agree to use the challenge solely for research and educational purposes.</p>
+
+        <h2 class="display-font h5">Publication embargo</h2>
+        <p>
+          We intend to publish a joint challenge paper describing the task, dataset, and results in a peer-reviewed
+          journal. A 12-month embargo period will apply only to publications that directly disclose or duplicate
+          challenge-level evaluation results, including rankings or comparative performance on the private held-out test set.
+        </p>
+        <p>
+          During the embargo period, participating teams retain full ownership of their methods and are free to continue
+          developing, extending, and internally disseminating their work. Publications that substantially extend the
+          submitted method or evaluate it outside the official challenge test set are permitted once the embargo period
+          concludes.
+        </p>
+        <p>
+          This policy is intended to enable a coherent and archival challenge summary publication without restricting
+          independent methodological research or scientific ownership.
+        </p>
+
+        <h2 class="display-font h5">Data license</h2>
+        <p>
+          The training and validation dataset is released under the
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer"
+            >CC BY-NC-SA</a
+          >
+          license.
+        </p>
+
+        <p class="rules-meta mb-0"><strong>Last updated:</strong> April 21, 2026</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container text-center">
+        <p class="mb-1"><span id="y"></span> AMPLIFAI Challenge</p>
+        <p class="mb-0">
+          <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer"
+            >Competition on Codabench</a
+          >
+          ·
+          <a href="https://docs.codabench.org/" target="_blank" rel="noopener noreferrer">Codabench documentation</a>
+          ·
+          <a href="rules.html">Terms &amp; Conditions</a>
+          ·
+          <a href="mailto:amplifai@som.umaryland.edu">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("y").textContent = "© " + new Date().getFullYear();
+    </script>
+  </body>
+</html>

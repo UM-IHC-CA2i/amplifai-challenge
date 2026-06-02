@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AMPLIFAI (Medical Image Computing and Computer Assisted Intervention (MICCAI) 2026): classify liver lesions on multi-phase abdominal computed tomography (CT) using the Liver Imaging Reporting and Data System (LI-RADS) framework—benchmarking artificial intelligence (AI) for trustworthy hepatocellular carcinoma (HCC) diagnosis. Submissions on Codabench."
+    />
+    <title>AMPLIFAI Challenge</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI — Home">
+          <img
+            src="assets/img/logo-mini-light.svg"
+            alt=""
+            width="200"
+            height="56"
+            class="navbar-brand-logo"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+            <li class="nav-item"><a class="nav-link" href="rules.html">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
+            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
+          </ul>
+          <a
+            class="btn btn-amplifai btn-sm px-3"
+            href="https://www.codabench.org/competitions/14290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Codabench</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        
+        <h1 class="mb-3">
+          <img
+            class="hero-brand-logo"
+            src="assets/img/logo-full-dark.svg"
+            alt="AMPLIFAI Challenge"
+            width="427"
+            height="313"
+            decoding="async"
+          />
+        </h1>
+        <p class="lead mb-4">
+          Official information site for the MICCAI 2026
+          AMPLIFAI competition. <br>
+          Download data, Submit solutions, and view Leaderboard on
+          <a
+            class="text-white fw-semibold"
+            href="https://www.codabench.org/competitions/14290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Codabench</a
+          >.
+        </p>
+        <a
+          class="btn btn-light btn-lg me-2 mb-2"
+          href="https://www.codabench.org/competitions/14290/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open competition</a
+        >
+        <a class="btn btn-outline-light btn-lg mb-2" href="timeline.html">View timeline</a>
+      </div>
+    </header>
+
+    <section class="section-block" id="overview">
+      <div class="container">
+        <h2 class="section-title anchor-offset">Welcome</h2>
+        <p class="text-muted-amplifai mb-0">
+          Welcome to the Annotated Multi-Phase Liver Imaging for Artificial Intelligence (AMPLIFAI) Challenge, a Medical
+          Image Computing and Computer Assisted Intervention (MICCAI) 2026 benchmark for clinically meaningful artificial
+          intelligence (AI) in liver lesion assessment on multi-phase computed tomography (CT). AMPLIFAI is built around
+          the
+          <a
+            href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/LI-RADS/LI-RADS-CT-MRI-2018-Core.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Liver Imaging Reporting and Data System (LI-RADS)&reg;</a
+          >
+          framework to support trustworthy and interpretable models for real-world hepatocellular carcinoma (HCC)
+          diagnosis.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-block" id="task-overview">
+      <div class="container">
+        <h2 class="section-title anchor-offset">Task Overview</h2>
+        <p class="text-muted-amplifai mb-0">
+          The AMPLIFAI task is to classify the LI-RADS score of one pre-defined target lesion per case from multi-phase
+          CT.
+          Public training data is harmonized and preprocessed from four source datasets, with radiologist-provided lesion
+          segmentations and annotations. Final ranking is based solely on classification performance.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-block" id="challenge-aim">
+      <div class="container">
+        <h2 class="section-title anchor-offset">Challenge Aim</h2>
+        <p class="text-muted-amplifai mb-0">
+          The AMPLIFAI challenge invites the medical imaging community to develop AI models capable of classifying 
+          lesions across the full LI-RADS spectrum. Participants will be provided with training data containing
+          multi-phase CT volumes, lesion-level LI-RADS category labels, and voxel-level segmentations of key imaging
+          features (e.g., non-rim APHE, non-peripheral washout, and enhancing capsule) of the relevant liver lesion per
+          case. This unique dataset enables both end-to-end and feature-guided approaches to LI-RADS classification;
+          however, models will be evaluated solely on their predicted LI-RADS category, leaving participants free to
+          leverage the provided feature annotations however they see fit.
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="section-block" id="what-is-hcc">
+      <div class="container">
+        <h2 class="section-title anchor-offset">What is Hepatocellular Carcinoma (HCC)?</h2>
+        <p class="text-muted-amplifai mb-0">
+          Hepatocellular carcinoma is the most common primary liver cancer and a leading cause of cancer-related mortality
+          worldwide. It arises predominantly in patients with chronic liver disease or cirrhosis, a population that
+          undergoes routine surveillance imaging, making CT a natural screening tool. Crucially, HCC is one of the few
+          malignancies where diagnosis can be established entirely from imaging - no biopsy required. This is codified in
+          the
+          <a
+            href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/LI-RADS/LI-RADS-CT-MRI-2018-Core.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LI-RADS&reg;</a
+          >
+          (Liver Imaging Reporting and Data System) framework, which assigns lesions a category from LR-1
+          (“definitely benign”) to LR-5 (“definitely HCC”) based on morphology and dynamic contrast enhancement patterns
+          across multiple CT phases. An LR-5 designation alone is sufficient for clinical diagnosis and treatment
+          planning.
+        </p>
+      </div>
+    </section> -->
+
+
+    <footer class="site-footer">
+      <div class="container text-center">
+        <p class="mb-1"><span id="y"></span> AMPLIFAI Challenge</p>
+        <p class="mb-0">
+          <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer"
+            >Competition on Codabench</a
+          >
+          ·
+          <a href="https://docs.codabench.org/" target="_blank" rel="noopener noreferrer">Codabench documentation</a>
+          ·
+          <a href="rules.html">Terms &amp; Conditions</a>
+          ·
+          <a href="mailto:amplifai@som.umaryland.edu">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("y").textContent = "© " + new Date().getFullYear();
+    </script>
+  </body>
+</html>

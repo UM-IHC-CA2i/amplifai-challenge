@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data — AMPLIFAI Challenge</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI — Home">
+          <img
+            src="assets/img/logo-mini-light.svg"
+            alt=""
+            width="200"
+            height="56"
+            class="navbar-brand-logo"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="data.html">Data</a></li>
+            <li class="nav-item"><a class="nav-link" href="rules.html">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
+            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
+          </ul>
+          <a
+            class="btn btn-amplifai btn-sm px-3"
+            href="https://www.codabench.org/competitions/14290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Codabench</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="container section-block">
+      <h1 class="display-font fw-bold mb-4">Data</h1>
+
+      <h2 class="section-title display-font">Challenge Data</h2>
+      <p class="text-muted-amplifai mb-0">
+        The challenge dataset comprises 779 multi-phase, contrast-enhanced CT studies, divided into training,
+        validation, and test sets. A case refers to a single patient containing one arterial and at least one late
+        contrast phase (either venous or delayed). For every case, the multi-phase CT volumes are provided in
+        <a href="https://nifti.nimh.nih.gov/nifti-1/" target="_blank" rel="noopener noreferrer">NIfTI</a>
+        format.
+      </p>
+      <p class="text-muted-amplifai mt-3 mb-0">
+        In addition, each case includes exactly one lesion segmentation, also in
+        NIfTI format. This segmentation is a
+        voxel-level mask of the target lesion annotated by board-certified radiologists. When present, voxel-level
+        segmentations of key imaging features - non-rim APHE, non-peripheral washout, and enhancing capsule - are also
+        provided in NIfTI format. While multiple lesions may be present within a given study, only one lesion per case
+        is annotated and released. This annotated lesion represents the most clinically relevant or prominent lesion, as
+        selected by the radiologists.
+      </p>
+      <p class="text-muted-amplifai mt-3 mb-0">
+        Participants should develop models that predict the LI-RADS category for the single annotated lesion only, even
+        if other lesions are visible in the images.
+      </p>
+      <p class="text-muted-amplifai mt-3 mb-0">
+        Competition bundles are distributed through the
+        <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer">Codabench</a>
+        competition page. For access issues, email
+        <a href="mailto:amplifai@som.umaryland.edu">amplifai@som.umaryland.edu</a>.
+      </p>
+
+      <h2 class="section-title display-font mt-5">Dataset Summary</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle" style="max-width: 28rem">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Split</th>
+              <th scope="col">Cases</th>
+            </tr>
+          </thead>
+          <tbody class="text-muted-amplifai">
+            <tr>
+              <td>Training set</td>
+              <td>531</td>
+            </tr>
+            <tr>
+              <td>Validation set</td>
+              <td>59</td>
+            </tr>
+            <tr>
+              <td>Test set (private)</td>
+              <td>189</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="section-title display-font mt-5">Training and Validation Data</h2>
+      <p class="text-muted-amplifai">
+        The public training and validation dataset was curated from four publicly accessible datasets that were harmonized
+        and preprocessed for this challenge, then re-annotated according to the challenge protocol. The contributing
+        datasets and their source institutions are listed below:
+      </p>
+      <ul class="text-muted-amplifai">
+        <li><strong class="text-reset">WAW-TACE</strong> — Medical University of Warsaw</li>
+        <li><strong class="text-reset">HCC-TACE-SEG</strong> — The University of Texas MD Anderson Cancer Center</li>
+        <li>
+          <strong class="text-reset">TCGA-LIHC</strong> — Mayo Clinic, Rochester; University of North Carolina,
+          Chapel Hill; Alberta Health Services; Lahey Hospital &amp; Medical Center
+        </li>
+        <li><strong class="text-reset">PLC-CECT</strong> — Chongqing Yubei District People’s Hospital</li>
+      </ul>
+      <p class="text-muted-amplifai">
+        Cases from contributing datasets that included existing annotations were partially pre-annotated; all training
+        and validation cases were fully re-annotated by three board-certified radiologists following the challenge
+        protocol.
+      </p>
+      <p class="text-muted-amplifai mb-0">
+        The validation set comprises approximately 10% of the public data and is constructed to ensure equitable
+        representation across all contributing datasets.
+      </p>
+
+      <h2 class="section-title display-font mt-5">Test Data</h2>
+      <p class="text-muted-amplifai mb-0">
+        The held-out test set is not public and was specifically curated for this challenge. The test set contains 189
+        cases acquired between February 2023 and May 2026 within three different imaging centers of the University
+        of Maryland Medical System. For each test case, participant models receive the multi-phase CT volumes and a
+        lesion segmentation for the intended target lesion as input. The test set is private and will not be released
+        publicly; to ensure the integrity of the challenge, no additional information is provided.
+      </p>
+
+      <h2 class="section-title display-font mt-5">Evaluation</h2>
+      <p class="text-muted-amplifai mb-3">
+        Models will be evaluated solely on the accuracy of LI-RADS categorization.
+      </p>
+      <p class="text-muted-amplifai mb-0">
+        The final ranking score will be computed as a weighted composite metric that reflects both the primary ordinal
+        LI-RADS characterization task and recognition of special LI-RADS categories for non-HCC lesions. Each algorithm is
+        required to generate a single LI-RADS category for the pre-defined target lesion in each test case. Valid prediction
+        labels are <strong>LR-1</strong>, <strong>LR-2</strong>, <strong>LR-3</strong>, <strong>LR-4</strong>,
+        <strong>LR-5</strong>, <strong>LR-M</strong>, and <strong>LR-TIV</strong>.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container text-center">
+        <p class="mb-1"><span id="y"></span> AMPLIFAI Challenge</p>
+        <p class="mb-0">
+          <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer"
+            >Competition on Codabench</a
+          >
+          ·
+          <a href="https://docs.codabench.org/" target="_blank" rel="noopener noreferrer">Codabench documentation</a>
+          ·
+          <a href="rules.html">Terms &amp; Conditions</a>
+          ·
+          <a href="mailto:amplifai@som.umaryland.edu">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("y").textContent = "© " + new Date().getFullYear();
+    </script>
+  </body>
+</html>
