@@ -190,6 +190,23 @@ footer.site-footer a:hover {
   margin-bottom: 1rem;
 }
 
+.background-categories-table {
+  font-size: 0.9rem;
+}
+
+.background-categories-table th {
+  white-space: nowrap;
+}
+
+.lirads-figure {
+  max-width: 56rem;
+}
+
+.lirads-figure img {
+  width: 100%;
+  height: auto;
+}
+
 .rules-prose .rules-meta {
   font-size: 0.9rem;
   margin-top: 2.5rem;
@@ -198,16 +215,68 @@ footer.site-footer a:hover {
   color: var(--amplifai-muted);
 }
 
+.organizers-page-title {
+  margin-bottom: 1rem;
+}
+
+.organizers-intro {
+  margin-bottom: 0;
+  max-width: 42rem;
+}
+
+.organizers-miccai-banner {
+  margin-top: 2rem;
+}
+
+.organizers-committee-heading {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--amplifai-ink);
+  margin: 3.5rem 0 2.25rem;
+  padding-bottom: 1rem;
+  letter-spacing: -0.03em;
+  border-bottom: 3px solid var(--amplifai-accent);
+}
+
+.organizers-group + .organizers-group {
+  margin-top: 5rem;
+  padding-top: 0.25rem;
+}
+
+.organizers-section-heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--amplifai-accent-deep);
+  margin: 0;
+  padding-bottom: 0.65rem;
+  border-bottom: 2px solid var(--amplifai-border);
+}
+
+.organizers-institutes-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--amplifai-ink);
+  margin: 4rem 0 1.75rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 3px solid var(--amplifai-accent);
+}
+
 .organizers-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem 1.25rem;
-  margin-top: 1.5rem;
+  gap: 1.75rem 1.5rem;
+  margin-top: 1.75rem;
 }
 
 @media (min-width: 768px) {
   .organizers-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .organizers-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
@@ -240,6 +309,14 @@ footer.site-footer a:hover {
   margin: 0.65rem 0 0;
   color: var(--amplifai-ink);
   line-height: 1.25;
+}
+
+.organizer-card .organizer-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--amplifai-ink);
+  margin: 0.35rem 0 0;
+  line-height: 1.35;
 }
 
 .organizer-card .organizer-affiliation {

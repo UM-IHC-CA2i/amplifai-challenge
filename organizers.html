@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Organizers — AMPLIFAI Challenge</title>
+    <title>Organizers - AMPLIFAI Challenge</title>
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="assets/img/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/img/favicon.png" />
@@ -25,7 +25,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
       <div class="container">
-        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI — Home">
+        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI - Home">
           <img
             src="assets/img/logo-mini-light.svg"
             alt=""
@@ -49,29 +49,45 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="background.html">Background</a></li>
             <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
             <li class="nav-item"><a class="nav-link" href="rules.html">Terms</a></li>
             <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="organizers.html">Organizers</a></li>
           </ul>
-          <a
-            class="btn btn-amplifai btn-sm px-3"
-            href="https://www.codabench.org/competitions/14290/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Codabench</a
-          >
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://www.codabench.org/competitions/14290/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Codabench</a
+            >
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download Data</a
+            >
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://github.com/UM2ii/amplifai-codabench"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Submission Sample</a
+            >
+          </div>
         </div>
       </div>
     </nav>
 
-    <main class="container section-block">
-      <h1 class="display-font fw-bold mb-3">Organizers</h1>
-      <p class="text-muted-amplifai mb-0">
-        The AMPLIFAI challenge is led by the organizing committee and partner institutes below. For competition questions, email
-        <a href="mailto:amplifai@som.umaryland.edu">amplifai@som.umaryland.edu</a>.
+    <main class="container section-block organizers-page">
+      <h1 class="display-font fw-bold organizers-page-title">Organizers</h1>
+      <p class="text-muted-amplifai organizers-intro">
+        The AMPLIFAI challenge is led by the organizing committee and partner institutes below. For competition questions, email <a href="mailto:amplifai@som.umaryland.edu">amplifai@som.umaryland.edu</a>.
       </p>
-      <section class="mt-4 p-3 p-md-4 border rounded-3 text-center" aria-label="Competition details">
+      <section class="organizers-miccai-banner p-3 p-md-4 border rounded-3 text-center" aria-label="Competition details">
         <p class="display-font mb-2">MICCAI 2026</p>
         <p class="text-muted-amplifai mb-3">SEPT. 27- OCT. 1, 2026</p>
         <img
@@ -83,8 +99,13 @@
         />
       </section>
 
-      <h2 class="h4 display-font mt-5 mb-0">Organizing committee</h2>
-      <div class="organizers-grid" aria-label="Organizing committee">
+      <h2 class="organizers-committee-heading display-font">Organizing committee</h2>
+
+      <section class="organizers-group">
+        <h3 class="organizers-section-heading display-font">
+          AI-enabled Medical Imaging @ Center for Applied AI (CA<sup>2</sup>i), UM-IHC
+        </h3>
+        <div class="organizers-grid" aria-label="AI-enabled Medical Imaging at Center for Applied AI (CA2i), UM-IHC">
         <div class="organizer-card">
           <figure>
             <img
@@ -96,24 +117,7 @@
             />
           </figure>
           <p class="organizer-name">Nikhil Shah</p>
-          <p class="organizer-affiliation">
-            University of Maryland Institute for Health Computing, North Bethesda, MD
-          </p>
-        </div>
-        <div class="organizer-card">
-          <figure>
-            <img
-              src="assets/img/amplifai-organizers/amplifai-organizers-2-Pranav_Kulkarni.png"
-              alt="Portrait of Pranav Kulkarni"
-              width="256"
-              height="256"
-              loading="lazy"
-            />
-          </figure>
-          <p class="organizer-name">Pranav Kulkarni</p>
-          <p class="organizer-affiliation">
-            University of Maryland Institute for Health Computing, North Bethesda, MD
-          </p>
+          <p class="organizer-title">Bioinformatics Engineer II</p>
         </div>
         <div class="organizer-card">
           <figure>
@@ -126,22 +130,20 @@
             />
           </figure>
           <p class="organizer-name">Amritansh Suryavanshi</p>
-          <p class="organizer-affiliation">
-            University of Maryland Institute for Health Computing, North Bethesda, MD
-          </p>
+          <p class="organizer-title">Research Assistant</p>
         </div>
         <div class="organizer-card">
           <figure>
             <img
-              src="assets/img/amplifai-organizers/amplifai-organizers-4-Jana_Delfino.png"
-              alt="Portrait of Jana Delfino"
+              src="assets/img/amplifai-organizers/amplifai-organizers-2-Pranav_Kulkarni.png"
+              alt="Portrait of Pranav Kulkarni"
               width="256"
               height="256"
               loading="lazy"
             />
           </figure>
-          <p class="organizer-name">Jana Delfino</p>
-          <p class="organizer-affiliation">U.S. Food and Drug Administration, Silver Spring, MD</p>
+          <p class="organizer-name">Pranav Kulkarni</p>
+          <p class="organizer-title">PhD student</p>
         </div>
         <div class="organizer-card">
           <figure>
@@ -154,9 +156,7 @@
             />
           </figure>
           <p class="organizer-name">Florence X. Doo</p>
-          <p class="organizer-affiliation">
-            University of Maryland Institute for Health Computing, North Bethesda, MD
-          </p>
+          <p class="organizer-title">Co-Lead</p>
         </div>
         <div class="organizer-card">
           <figure>
@@ -169,61 +169,7 @@
             />
           </figure>
           <p class="organizer-name">Heng Huang</p>
-          <p class="organizer-affiliation">
-            University of Maryland Institute for Health Computing, North Bethesda, MD
-          </p>
-        </div>
-        <div class="organizer-card">
-          <figure>
-            <img
-              src="assets/img/amplifai-organizers/amplifai-organizers-7-Jade_Wong.png"
-              alt="Portrait of Jade J. Wong-You-Cheong"
-              width="256"
-              height="256"
-              loading="lazy"
-            />
-          </figure>
-          <p class="organizer-name">Jade J. Wong-You-Cheong</p>
-          <p class="organizer-affiliation">University of Maryland School of Medicine, Baltimore, MD</p>
-        </div>
-        <div class="organizer-card">
-          <figure>
-            <img
-              src="assets/img/amplifai-organizers/amplifai-organizers-8-Barton_Lane.png"
-              alt="Portrait of Barton F. Lane"
-              width="256"
-              height="256"
-              loading="lazy"
-            />
-          </figure>
-          <p class="organizer-name">Barton F. Lane</p>
-          <p class="organizer-affiliation">University of Maryland School of Medicine, Baltimore, MD</p>
-        </div>
-        <div class="organizer-card">
-          <figure>
-            <img
-              src="assets/img/amplifai-organizers/amplifai-organizers-9-James_M_Tonascia.png"
-              alt="Portrait of James M. Tonascia"
-              width="256"
-              height="256"
-              loading="lazy"
-            />
-          </figure>
-          <p class="organizer-name">James M. Tonascia</p>
-          <p class="organizer-affiliation">University of Maryland School of Medicine, Baltimore, MD</p>
-        </div>
-        <div class="organizer-card">
-          <figure>
-            <img
-              src="assets/img/amplifai-organizers/amplifai-organizers-10-Joseph_Chirico.png"
-              alt="Portrait of Joseph Chirico"
-              width="256"
-              height="256"
-              loading="lazy"
-            />
-          </figure>
-          <p class="organizer-name">Joseph Chirico</p>
-          <p class="organizer-affiliation">University of Maryland School of Medicine, Baltimore, MD</p>
+          <p class="organizer-title">Co-Lead</p>
         </div>
         <div class="organizer-card">
           <figure>
@@ -236,13 +182,101 @@
             />
           </figure>
           <p class="organizer-name">Ang Li</p>
-          <p class="organizer-affiliation">
-            University of Maryland Institute for Health Computing, North Bethesda, MD
-          </p>
+          <p class="organizer-title">Collaborator, Assistant Professor</p>
         </div>
-      </div>
+        <div class="organizer-card">
+          <figure>
+            <img
+              src="assets/img/amplifai-organizers/amplifai-organizers-4-Jana_Delfino.png"
+              alt="Portrait of Jana Delfino"
+              width="256"
+              height="256"
+              loading="lazy"
+            />
+          </figure>
+          <p class="organizer-name">Jana Delfino</p>
+          <p class="organizer-title">Visiting Scientist</p>
+        </div>
+        </div>
+      </section>
 
-      <h2 class="h4 display-font mt-5 mb-4">Organizing Institutes</h2>
+      <section class="organizers-group">
+        <h3 class="organizers-section-heading display-font">
+          UMB/UMSOM Department of Diagnostic Radiology &amp; Nuclear Medicine
+        </h3>
+        <div
+          class="organizers-grid"
+          aria-label="UMB/UMSOM Department of Diagnostic Radiology and Nuclear Medicine"
+        >
+        <div class="organizer-card">
+          <figure>
+            <img
+              src="assets/img/amplifai-organizers/amplifai-organizers-7-Jade_Wong.png"
+              alt="Portrait of Jade J. Wong-You-Cheong"
+              width="256"
+              height="256"
+              loading="lazy"
+            />
+          </figure>
+          <p class="organizer-name">Jade J. Wong-You-Cheong</p>
+          <p class="organizer-title">Radiologist, Clinical Professor</p>
+        </div>
+        <div class="organizer-card">
+          <figure>
+            <img
+              src="assets/img/amplifai-organizers/amplifai-organizers-8-Barton_Lane.png"
+              alt="Portrait of Barton F. Lane"
+              width="256"
+              height="256"
+              loading="lazy"
+            />
+          </figure>
+          <p class="organizer-name">Barton F. Lane</p>
+          <p class="organizer-title">Radiologist, Section Chief, Associate Professor</p>
+        </div>
+        <div class="organizer-card">
+          <figure>
+            <img
+              src="assets/img/amplifai-organizers/amplifai-organizers-9-James_M_Tonascia.png"
+              alt="Portrait of James M. Tonascia"
+              width="256"
+              height="256"
+              loading="lazy"
+            />
+          </figure>
+          <p class="organizer-name">James M. Tonascia</p>
+          <p class="organizer-title">Radiologist, Assistant Professor</p>
+        </div>
+        <div class="organizer-card">
+          <figure>
+            <img
+              src="assets/img/amplifai-organizers/amplifai-organizers-12-Jeffrey_D_Hirsch.jpg"
+              alt="Portrait of Jeffrey D. Hirsch"
+              width="256"
+              height="256"
+              loading="lazy"
+            />
+          </figure>
+          <p class="organizer-name">Jeffrey D. Hirsch</p>
+          <p class="organizer-title">Radiologist, Associate Professor</p>
+        </div>
+        <div class="organizer-card">
+          <figure>
+            <img
+              src="assets/img/amplifai-organizers/amplifai-organizers-10-Joseph_Chirico.png"
+              alt="Portrait of Joseph Chirico"
+              width="256"
+              height="256"
+              loading="lazy"
+            />
+          </figure>
+          <p class="organizer-name">Joseph Chirico</p>
+          <p class="organizer-title">Resident Physician (PGY-3)</p>
+        </div>
+        </div>
+      </section>
+
+      <h2 class="organizers-institutes-heading display-font">Organizing Institutes</h2>
       <div class="organizing-institutes-grid" role="list" aria-label="Organizing institutes">
         <div class="organizing-institute-card" role="listitem">
           <figure class="mb-0">
