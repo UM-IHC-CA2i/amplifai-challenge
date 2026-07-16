@@ -7,6 +7,8 @@
   --amplifai-surface: #f8fafc;
   --amplifai-border: #e2e8f0;
   --amplifai-hero-gradient: linear-gradient(135deg, #0b1220 0%, #134e4a 48%, #0e7490 100%);
+  --amplifai-navbar-height: 4.5rem;
+  --amplifai-banner-height: 3.25rem;
 }
 
 html {
@@ -17,7 +19,7 @@ body {
   font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: var(--amplifai-ink);
   background: #fff;
-  padding-top: 4.5rem;
+  padding-top: calc(var(--amplifai-navbar-height) + var(--amplifai-banner-height));
 }
 
 h1,
@@ -156,7 +158,160 @@ footer.site-footer a:hover {
 }
 
 .anchor-offset {
-  scroll-margin-top: 5rem;
+  scroll-margin-top: calc(var(--amplifai-navbar-height) + var(--amplifai-banner-height) + 0.5rem);
+}
+
+.announcement-banner {
+  position: fixed;
+  top: var(--amplifai-navbar-height);
+  left: 0;
+  right: 0;
+  z-index: 1029;
+  min-height: var(--amplifai-banner-height);
+  display: flex;
+  align-items: center;
+  background: #fef08a;
+  border-bottom: 1px solid #eab308;
+  padding: 0.4rem 0;
+}
+
+.announcement-banner-link {
+  display: inline-block;
+  color: var(--amplifai-ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .announcement-banner-link {
+    font-size: 0.85rem;
+  }
+}
+
+.announcement-banner-link:hover,
+.announcement-banner-link:focus {
+  color: var(--amplifai-accent-deep);
+  text-decoration: underline;
+}
+
+.communications-intro {
+  max-width: 42rem;
+}
+
+.communications-list {
+  border: 1px solid var(--amplifai-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.communication-item + .communication-item {
+  border-top: 1px solid var(--amplifai-border);
+}
+
+.communication-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border: none;
+  background: var(--amplifai-surface);
+  color: var(--amplifai-ink);
+  text-align: left;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.communication-toggle:not(.collapsed) {
+  background: #fff;
+  box-shadow: inset 0 -1px 0 var(--amplifai-border);
+}
+
+.communication-toggle:hover,
+.communication-toggle:focus {
+  background: #fff;
+  color: var(--amplifai-accent-deep);
+  box-shadow: none;
+}
+
+.communication-toggle:focus-visible {
+  outline: 2px solid var(--amplifai-accent);
+  outline-offset: -2px;
+}
+
+.communication-meta {
+  display: grid;
+  grid-template-columns: minmax(7rem, 9rem) 1fr;
+  gap: 1rem 1.5rem;
+  align-items: baseline;
+  flex: 1;
+  min-width: 0;
+}
+
+.communication-chevron {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  background: rgba(11, 18, 32, 0.06);
+  color: var(--amplifai-muted);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.communication-toggle:not(.collapsed) .communication-chevron {
+  transform: rotate(180deg);
+  color: var(--amplifai-accent-deep);
+  background: rgba(8, 145, 178, 0.12);
+}
+
+.communication-toggle:hover .communication-chevron,
+.communication-toggle:focus .communication-chevron {
+  color: var(--amplifai-accent-deep);
+  background: rgba(8, 145, 178, 0.12);
+}
+
+@media (max-width: 575.98px) {
+  .communication-meta {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+.communication-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--amplifai-muted);
+  white-space: nowrap;
+}
+
+.communication-subject {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.communication-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+  color: var(--amplifai-muted);
+  line-height: 1.65;
+}
+
+.communication-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.communication-signature {
+  margin-top: 1.25rem;
+  font-weight: 600;
+  color: var(--amplifai-ink);
 }
 
 .table-timeline th {
@@ -361,6 +516,10 @@ footer.site-footer a:hover {
 }
 
 @media print {
+  .announcement-banner {
+    display: none !important;
+  }
+
   body {
     padding-top: 0 !important;
   }
