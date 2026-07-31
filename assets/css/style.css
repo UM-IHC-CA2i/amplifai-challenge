@@ -308,6 +308,15 @@ footer.site-footer a:hover {
   margin-bottom: 0;
 }
 
+.communication-body ul {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.communication-body li {
+  margin-bottom: 0.35rem;
+}
+
 .communication-signature {
   margin-top: 1.25rem;
   font-weight: 600;
