@@ -379,6 +379,138 @@ footer.site-footer a:hover {
   color: var(--amplifai-muted);
 }
 
+.papers-intro {
+  max-width: 42rem;
+}
+
+.papers-notice {
+  max-width: 46rem;
+  margin-bottom: 2.5rem;
+  padding: 1.15rem 1.35rem;
+  border: 2px solid #eab308;
+  border-radius: 0.5rem;
+  background: #fefce8;
+  color: var(--amplifai-ink);
+  line-height: 1.65;
+}
+
+.papers-section {
+  max-width: 46rem;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.papers-section--required {
+  border-left: 4px solid #dc2626;
+}
+
+.papers-section--optional {
+  border-left: 4px solid var(--amplifai-accent);
+}
+
+.papers-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--amplifai-surface);
+  border-bottom: 1px solid var(--amplifai-border);
+}
+
+.papers-section--required .papers-section-header {
+  background: #fef2f2;
+}
+
+.papers-section--optional .papers-section-header {
+  background: #ecfeff;
+}
+
+.papers-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.papers-badge--required {
+  background: #dc2626;
+  color: #fff;
+}
+
+.papers-badge--optional {
+  background: var(--amplifai-accent);
+  color: #fff;
+}
+
+.papers-section-body {
+  padding: 1.5rem;
+}
+
+.papers-section-body.rules-prose h3 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--amplifai-border);
+}
+
+.papers-section-body.rules-prose h3:first-of-type {
+  margin-top: 0.25rem;
+}
+
+.papers-section-body.rules-prose ol {
+  margin-bottom: 1rem;
+  padding-left: 1.35rem;
+  color: var(--amplifai-muted);
+}
+
+.papers-section-body.rules-prose ol > li {
+  margin-bottom: 0.75rem;
+}
+
+.papers-deadline {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--amplifai-border);
+}
+
+.papers-placeholder {
+  font-style: italic;
+  color: var(--amplifai-muted);
+}
+
+.papers-downloads {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.papers-downloads li {
+  margin-bottom: 0.65rem;
+  padding-left: 1.35rem;
+  position: relative;
+}
+
+.papers-downloads li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--amplifai-accent);
+}
+
+.papers-downloads a {
+  font-weight: 600;
+}
+
 .organizers-page-title {
   margin-bottom: 1rem;
 }

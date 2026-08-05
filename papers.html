@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Papers - AMPLIFAI Challenge</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI - Home">
+          <img
+            src="assets/img/logo-mini-light.svg"
+            alt=""
+            width="200"
+            height="56"
+            class="navbar-brand-logo"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="background.html">Background</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+            <li class="nav-item"><a class="nav-link" href="rules.html">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="papers.html">Papers</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
+            <li class="nav-item"><a class="nav-link" href="communications.html">Communications</a></li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://www.codabench.org/competitions/14290/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Codabench</a
+            >
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download Data</a
+            >
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://github.com/UM2ii/amplifai-codabench"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Submission Sample</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="announcement-banner" role="status">
+      <div class="container text-center">
+        <a class="announcement-banner-link" href="communications.html#model-submission-opens-july-31">
+          Important Notice, Please Read: July 31, 2026 - Model submission open for evaluation phase
+        </a>
+      </div>
+    </div>
+
+    <main class="container section-block papers-page">
+      <h1 class="display-font fw-bold mb-3">Papers</h1>
+      <p class="text-muted-amplifai papers-intro mb-4">
+        Documentation requirements and optional publication opportunities for AMPLIFAI participating teams.
+      </p>
+
+      <aside class="papers-notice anchor-offset" id="papers-distinction" role="note">
+        <p class="mb-0">
+          <strong>Important distinction:</strong> The Public Method Overview is mandatory for every participating team
+          and is required for AMPLIFAI challenge-award eligibility. Submission of a Springer LNCS proceedings paper is
+          optional and provides a separate opportunity for peer-reviewed publication, presentation at the AMPLIFAI
+          Satellite Event, and consideration for the Best Proceedings Paper Award.
+        </p>
+      </aside>
+
+      <article class="papers-section papers-section--required card card-amplifai anchor-offset" id="method-overview">
+        <div class="papers-section-header">
+          <h2 class="display-font h4 mb-0">Public Method Overview</h2>
+          <span class="papers-badge papers-badge--required">Required</span>
+        </div>
+        <div class="papers-section-body rules-prose">
+          <p>
+            MICCAI requires challenge organizers to ensure that a description of each participant&rsquo;s submission is
+            publicly available.
+          </p>
+          <p>
+            To satisfy this requirement, every participating AMPLIFAI team must submit a
+            <strong>Public Method Overview</strong> describing the method associated with its final official challenge
+            submission.
+          </p>
+          <p>
+            A valid Public Method Overview is required for eligibility for AMPLIFAI challenge awards.
+          </p>
+
+          <h3 class="display-font h5">Submission requirements</h3>
+          <p>Each team must provide at least one final Method Overview.</p>
+          <p>The document should:</p>
+          <ul>
+            <li>Follow an extended-abstract style.</li>
+            <li>Be approximately four pages.</li>
+            <li>Be understandable without access to private source code.</li>
+            <li>Describe the method associated with the team&rsquo;s latest official challenge submission.</li>
+            <li>Include the associated challenge submission ID and submission date.</li>
+            <li>
+              Identify all external datasets, pretrained models, foundation models, pseudo-labels, and other external
+              resources used.
+            </li>
+            <li>Be reviewed and approved by the submitting team for public release.</li>
+          </ul>
+          <p>
+            Teams may submit an initial version and update it later. The final publicly released version must accurately
+            describe the method used for the team&rsquo;s final official challenge submission.
+          </p>
+
+          <h3 class="display-font h5">Recommended structure</h3>
+          <ol>
+            <li>
+              <strong>Team and Submission Information</strong>
+              <ul>
+                <li>Team name</li>
+                <li>Team members</li>
+                <li>Affiliations</li>
+                <li>Submission ID</li>
+                <li>Submission date</li>
+              </ul>
+            </li>
+            <li><strong>Introduction</strong></li>
+            <li>
+              <strong>Method</strong>
+              <ul>
+                <li>Model architecture</li>
+                <li>Data preprocessing</li>
+                <li>Training procedure</li>
+                <li>Inference and postprocessing</li>
+                <li>External data and pretrained resources</li>
+              </ul>
+            </li>
+            <li><strong>Results and Discussion</strong></li>
+            <li><strong>Limitations</strong></li>
+            <li><strong>Conclusion</strong></li>
+            <li><strong>References</strong></li>
+            <li>
+              <strong>Disclosure</strong>
+              <ul>
+                <li>External-data declaration</li>
+                <li>Pretrained-model declaration</li>
+                <li>Confirmation that the document is approved for public release</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3 class="display-font h5">Public availability</h3>
+          <p>
+            The Method Overview will be made publicly available through the AMPLIFAI website, OpenReview, or another
+            public challenge repository.
+          </p>
+          <p>
+            Submission of a Springer proceedings paper does not replace the requirement to provide a final Method Overview
+            unless the organizers explicitly confirm that the proceedings submission contains all required information and
+            accurately describes the team&rsquo;s final challenge method.
+          </p>
+
+          <p class="papers-deadline mb-1">
+            <strong>Method Overview deadline:</strong> <span class="papers-placeholder">[INSERT DEADLINE]</span>
+          </p>
+          <p class="mb-0">
+            <strong>Method Overview submission portal:</strong> <span class="papers-placeholder">[INSERT LINK]</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="papers-section papers-section--optional card card-amplifai anchor-offset" id="springer-proceedings">
+        <div class="papers-section-header">
+          <h2 class="display-font h4 mb-0">Springer LNCS Proceedings Papers</h2>
+          <span class="papers-badge papers-badge--optional">Optional</span>
+        </div>
+        <div class="papers-section-body rules-prose">
+          <p>
+            AMPLIFAI participants are invited to submit an optional short paper for consideration in the
+            <strong>MICCAI 2026 Satellite Event Springer LNCS proceedings</strong>.
+          </p>
+          <p>
+            Submitting a Springer proceedings paper is <strong>not required</strong> for challenge participation or
+            AMPLIFAI award eligibility. All teams must still submit the mandatory Public Method Overview described above.
+          </p>
+          <p>
+            Accepted proceedings papers will be published through the MICCAI Satellite Event proceedings process.
+          </p>
+
+          <h3 class="display-font h5">Intent to submit</h3>
+          <p>
+            Teams planning to submit a proceedings paper must complete the Intent-to-Submit form by
+            <strong>August 10, 2026</strong>.
+          </p>
+          <p>
+            The intent form collects the provisional paper title, author list, contact information, and reviewer
+            conflicts.
+          </p>
+          <p>
+            <a
+              class="btn btn-amplifai btn-sm"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdPoj2KrAIuU8OSubARUV91o8g7D3FuYxosWw_IzrdBpeMoiQ/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Complete the AMPLIFAI Proceedings Intent-to-Submit Form</a
+            >
+          </p>
+          <p>
+            Submitting the intent form is not the same as submitting the manuscript. Titles and author information may be
+            updated before the initial manuscript deadline.
+          </p>
+
+          <h3 class="display-font h5">Paper format</h3>
+          <p>Proceedings submissions must:</p>
+          <ul>
+            <li>Use the Springer LNCS template.</li>
+            <li>Be <strong>6&ndash;11 pages in total</strong>.</li>
+            <li>
+              Include the title, abstract, figures, tables, acknowledgments, disclosures, appendices, and references within
+              the page limit.
+            </li>
+            <li>Contain significant scientific and technical content.</li>
+          </ul>
+          <p>
+            There is no fixed numerical limit on figures or tables. However, all content must fit within the page limit and
+            comply with Springer&rsquo;s requirements for clarity, legibility, captions, and image quality. Springer
+            requires figure text to remain legible and recommends vector graphics for diagrams where possible.
+          </p>
+
+          <h3 class="display-font h5">Expected manuscript content</h3>
+          <p>
+            The paper should describe the team&rsquo;s latest implemented AMPLIFAI method as of the initial manuscript
+            deadline, including:
+          </p>
+          <ul>
+            <li>Overall methodology and model architecture.</li>
+            <li>Data preprocessing.</li>
+            <li>Training strategy and loss functions.</li>
+            <li>Inference and postprocessing.</li>
+            <li>Use of external datasets or pretrained models.</li>
+            <li>Validation experiments and relevant ablation studies.</li>
+            <li>Reproducibility and implementation details.</li>
+            <li>Limitations and known failure modes.</li>
+          </ul>
+          <p>
+            Teams may revise their manuscript in response to reviewer feedback before the camera-ready deadline.
+          </p>
+          <p>
+            The camera-ready submission must be final. Springer does not permit substantive changes to results, methods,
+            titles, or authorship during the later proofing stage.
+          </p>
+
+          <h3 class="display-font h5">Review process</h3>
+          <p>Each submission will be evaluated using:</p>
+          <ul>
+            <li>Two reviewers.</li>
+            <li>One meta-reviewer.</li>
+            <li>Final decisions by the AMPLIFAI Proceedings Chairs.</li>
+          </ul>
+          <p>Proceedings acceptance is independent of final challenge leaderboard performance.</p>
+
+          <h3 class="display-font h5">Presentation opportunities</h3>
+          <p>
+            Selected accepted papers will be invited for presentation at the
+            <strong>AMPLIFAI Satellite Event at MICCAI 2026</strong>, alongside the final challenge winners.
+          </p>
+          <p>
+            The strongest accepted submission will be recognized with an
+            <strong>AMPLIFAI Best Proceedings Paper Award</strong>.
+          </p>
+          <p>The following are separate decisions:</p>
+          <ul>
+            <li>Proceedings-paper acceptance.</li>
+            <li>Oral or poster presentation selection.</li>
+            <li>Best Proceedings Paper selection.</li>
+            <li>Final challenge ranking.</li>
+            <li>Challenge-award selection.</li>
+          </ul>
+
+          <h3 class="display-font h5">Timeline</h3>
+          <div class="table-responsive card card-amplifai p-0 overflow-hidden mb-4">
+            <table class="table table-timeline mb-0">
+              <tbody>
+                <tr>
+                  <th class="ps-4 py-3 bg-white border-end">August 10, 2026</th>
+                  <td class="py-3">Intent to submit, provisional title, and author list</td>
+                </tr>
+                <tr>
+                  <th class="ps-4 py-3 bg-light border-end">August 17, 2026</th>
+                  <td class="py-3">Initial manuscript submission</td>
+                </tr>
+                <tr>
+                  <th class="ps-4 py-3 bg-white border-end">August 22, 2026</th>
+                  <td class="py-3">Review decisions and revision requests</td>
+                </tr>
+                <tr>
+                  <th class="ps-4 py-3 bg-light border-end">August 25, 2026</th>
+                  <td class="py-3">Final camera-ready package due</td>
+                </tr>
+                <tr>
+                  <th class="ps-4 py-3 bg-white border-end">August 27, 2026</th>
+                  <td class="py-3">Final proceedings package submitted to MICCAI</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="display-font h5">Initial manuscript submission</h3>
+          <p>Authors must submit through the AMPLIFAI OpenReview proceedings portal:</p>
+          <ul>
+            <li>Manuscript PDF.</li>
+            <li>Finalized submission metadata.</li>
+            <li>Author information.</li>
+            <li>Abstract and keywords.</li>
+            <li>External-resource disclosure.</li>
+            <li>Optional supplementary PDF.</li>
+          </ul>
+          <p>
+            <a class="btn btn-amplifai btn-sm me-2" href="openreview-instructions.html"
+              >OpenReview submission instructions</a
+            >
+            <a
+              class="btn btn-amplifai btn-sm"
+              href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/AMPLIFAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open AMPLIFAI OpenReview proceedings portal</a
+            >
+          </p>
+          <p class="mb-0">
+            <strong>OpenReview submission portal:</strong>
+            <a
+              href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/AMPLIFAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MICCAI 2026 Workshop AMPLIFAI on OpenReview</a
+            >
+          </p>
+
+          <h3 class="display-font h5">Camera-ready requirements for accepted papers</h3>
+          <p>Accepted-paper authors must provide:</p>
+          <ul>
+            <li>Final manuscript PDF.</li>
+            <li>Complete LaTeX or Microsoft Word source files.</li>
+            <li>Bibliography files.</li>
+            <li>Figures and associated source materials.</li>
+            <li>One supplementary PDF, if applicable.</li>
+            <li>Final title and abstract.</li>
+            <li>Final author list and affiliations.</li>
+            <li>Corresponding-author name and email.</li>
+            <li>ORCIDs, where available.</li>
+            <li>Signed Springer licence-to-publish form.</li>
+          </ul>
+          <p>
+            Springer requires one clearly identified corresponding author. The corresponding author must sign the
+            licence-to-publish form on behalf of all authors. The author list, author order, and corresponding author must
+            be final before delivery to Springer.
+          </p>
+
+          <h3 class="display-font h5">Author resources</h3>
+          <p>
+            Download proceedings materials below. Official Springer templates and author instructions are linked from
+            Springer; AMPLIFAI-specific instructions and forms are hosted on this site.
+          </p>
+          <ul class="papers-downloads mb-0">
+            <li>
+              <a href="openreview-instructions.html">AMPLIFAI OpenReview submission instructions</a>
+            </li>
+            <li>
+              <a
+                href="https://link.springer.com/series/558/information-for-authors-and-editors"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Springer LNCS instructions, LaTeX template, and Word template</a
+              >
+            </li>
+            <li>
+              <a
+                href="assets/downloads/proceedings/springer-licence-to-publish-form.docx"
+                download
+                >Springer licence-to-publish form for accepted papers</a
+              >
+            </li>
+            <li>
+              <a href="assets/downloads/proceedings/amplifai-camera-ready-metadata-form.pdf" download
+                >Camera-ready metadata collection form</a
+              >
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container text-center">
+        <p class="mb-1"><span id="y"></span> AMPLIFAI Challenge</p>
+        <p class="mb-0">
+          <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer"
+            >Competition on Codabench</a
+          >
+          ·
+          <a href="https://docs.codabench.org/" target="_blank" rel="noopener noreferrer">Codabench documentation</a>
+          ·
+          <a href="rules.html">Terms &amp; Conditions</a>
+          ·
+          <a href="mailto:amplifai@som.umaryland.edu">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("y").textContent = "© " + new Date().getFullYear();
+    </script>
+  </body>
+</html>
