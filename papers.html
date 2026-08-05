@@ -116,37 +116,55 @@
         </div>
         <div class="papers-section-body rules-prose">
           <p>
-            MICCAI requires challenge organizers to ensure that a description of each participant&rsquo;s submission is
-            publicly available.
+            Under the publication commitment made in AMPLIFAI&rsquo;s accepted MICCAI 2026 challenge proposal, each
+            participating team must provide a publicly available description of the method associated with its final
+            official challenge submission.
           </p>
           <p>
-            To satisfy this requirement, every participating AMPLIFAI team must submit a
-            <strong>Public Method Overview</strong> describing the method associated with its final official challenge
+            A compliant Public Method Overview is required for eligibility for an AMPLIFAI challenge award.
+          </p>
+          <p>
+            Submission of a Springer LNCS proceedings paper is optional and does not replace the Public Method Overview
+            requirement.
+          </p>
+
+          <h3 class="display-font h5">Deadline</h3>
+          <p class="papers-deadline mb-1">
+            <strong>September 15, 2026</strong>
+          </p>
+          <p>
+            Teams should submit the Method Overview after completing their final official AMPLIFAI challenge submission.
+            The submitted document must identify and accurately describe the method associated with that final
             submission.
-          </p>
-          <p>
-            A valid Public Method Overview is required for eligibility for AMPLIFAI challenge awards.
           </p>
 
           <h3 class="display-font h5">Submission requirements</h3>
-          <p>Each team must provide at least one final Method Overview.</p>
-          <p>The document should:</p>
+          <p>Each participating team must provide at least one final Public Method Overview.</p>
+          <p>The document must:</p>
           <ul>
             <li>Follow an extended-abstract style.</li>
-            <li>Be approximately four pages.</li>
+            <li>Be approximately four pages; however, no strict page maximum will be enforced.</li>
+            <li>Be submitted as a searchable PDF.</li>
             <li>Be understandable without access to private source code.</li>
-            <li>Describe the method associated with the team&rsquo;s latest official challenge submission.</li>
-            <li>Include the associated challenge submission ID and submission date.</li>
+            <li>Identify the associated official challenge submission ID and submission date.</li>
             <li>
-              Identify all external datasets, pretrained models, foundation models, pseudo-labels, and other external
-              resources used.
+              Accurately describe the method used for the team&rsquo;s final official challenge submission.
             </li>
+            <li>
+              Describe the model architecture, data preprocessing, training procedure, inference procedure, and
+              postprocessing.
+            </li>
+            <li>
+              Identify all external datasets, pretrained models, foundation models, pseudo-labels, synthetic data,
+              external annotations, and other external resources used.
+            </li>
+            <li>Include relevant results and discussion, limitations, conclusions, and references.</li>
             <li>Be reviewed and approved by the submitting team for public release.</li>
+            <li>
+              Contain no protected health information, confidential information, access credentials, or material that
+              the team is not authorized to publish.
+            </li>
           </ul>
-          <p>
-            Teams may submit an initial version and update it later. The final publicly released version must accurately
-            describe the method used for the team&rsquo;s final official challenge submission.
-          </p>
 
           <h3 class="display-font h5">Recommended structure</h3>
           <ol>
@@ -156,7 +174,7 @@
                 <li>Team name</li>
                 <li>Team members</li>
                 <li>Affiliations</li>
-                <li>Submission ID</li>
+                <li>Official submission ID</li>
                 <li>Submission date</li>
               </ul>
             </li>
@@ -178,29 +196,43 @@
             <li>
               <strong>Disclosure</strong>
               <ul>
-                <li>External-data declaration</li>
-                <li>Pretrained-model declaration</li>
+                <li>External datasets used</li>
+                <li>Pretrained or foundation models used</li>
+                <li>Pseudo-labels, synthetic data, or external annotations used</li>
+                <li>Confirmation that the document accurately describes the final official submission</li>
                 <li>Confirmation that the document is approved for public release</li>
               </ul>
             </li>
           </ol>
 
-          <h3 class="display-font h5">Public availability</h3>
+          <h3 class="display-font h5">Corrections and public release</h3>
           <p>
-            The Method Overview will be made publicly available through the AMPLIFAI website, OpenReview, or another
-            public challenge repository.
+            The organizers may request corrections after the deadline to address missing information, inconsistencies, or
+            publication-compliance issues. These corrections may not be used to replace the method associated with the
+            team&rsquo;s final official challenge submission.
           </p>
           <p>
-            Submission of a Springer proceedings paper does not replace the requirement to provide a final Method Overview
-            unless the organizers explicitly confirm that the proceedings submission contains all required information and
-            accurately describes the team&rsquo;s final challenge method.
+            Compliant Method Overviews will be made publicly available through the AMPLIFAI challenge website or an
+            associated public repository under a
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"
+              >Creative Commons Attribution 4.0 International (CC BY 4.0)</a
+            >
+            license. Others may reuse, share, and adapt these documents with appropriate attribution to the submitting
+            team.
+          </p>
+          <p>
+            By submitting a Public Method Overview, the submitting team confirms that it has the rights to release the
+            document under CC BY 4.0 and that the document may be published and reused accordingly.
           </p>
 
-          <p class="papers-deadline mb-1">
-            <strong>Method Overview deadline:</strong> <span class="papers-placeholder">[INSERT DEADLINE]</span>
-          </p>
           <p class="mb-0">
-            <strong>Method Overview submission portal:</strong> <span class="papers-placeholder">[INSERT LINK]</span>
+            <a
+              class="btn btn-amplifai btn-sm"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfCjoJYpPPB8gyIJskEM1za3HLZ7NtoFDvAZ9DZg1q2NMXMEQ/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Submit the Public Method Overview</a
+            >
           </p>
         </div>
       </article>
@@ -287,13 +319,29 @@
           </p>
 
           <h3 class="display-font h5">Review process</h3>
-          <p>Each submission will be evaluated using:</p>
+          <p>Each proceedings submission will be evaluated by:</p>
           <ul>
             <li>Two reviewers.</li>
             <li>One meta-reviewer.</li>
-            <li>Final decisions by the AMPLIFAI Proceedings Chairs.</li>
+            <li>The AMPLIFAI Proceedings Chairs, who will make the final acceptance decision.</li>
           </ul>
-          <p>Proceedings acceptance is independent of final challenge leaderboard performance.</p>
+          <p>
+            The proceedings will use a <strong>single-blind review process</strong>. Reviewers and meta-reviewers will be
+            able to see the authors&rsquo; identities, while reviewer and meta-reviewer identities will remain
+            confidential.
+          </p>
+          <p>
+            For accepted papers, the OpenReview submission page, anonymized reviews, and meta-review may be made
+            publicly available as part of the MICCAI Satellite Event publication process.
+          </p>
+          <p>
+            Proceedings-paper acceptance is independent of final challenge leaderboard performance. Challenge ranking will
+            be determined solely according to the published AMPLIFAI evaluation procedure.
+          </p>
+          <p>
+            The Springer production documents require organizers to report the review model and average number of reviews
+            per submission, while the front matter must describe the review process.
+          </p>
 
           <h3 class="display-font h5">Presentation opportunities</h3>
           <p>
@@ -301,8 +349,9 @@
             <strong>AMPLIFAI Satellite Event at MICCAI 2026</strong>, alongside the final challenge winners.
           </p>
           <p>
-            The strongest accepted submission will be recognized with an
-            <strong>AMPLIFAI Best Proceedings Paper Award</strong>.
+            One accepted submission will be selected for the
+            <strong>AMPLIFAI Best Proceedings Paper Award</strong> based on scientific quality, technical soundness,
+            relevance to AMPLIFAI, reproducibility, and clarity of presentation.
           </p>
           <p>The following are separate decisions:</p>
           <ul>
@@ -319,15 +368,15 @@
               <tbody>
                 <tr>
                   <th class="ps-4 py-3 bg-white border-end">August 10, 2026</th>
-                  <td class="py-3">Intent to submit, provisional title, and author list</td>
+                  <td class="py-3">Proceedings Intent-to-Submit form due</td>
                 </tr>
                 <tr>
                   <th class="ps-4 py-3 bg-light border-end">August 17, 2026</th>
-                  <td class="py-3">Initial manuscript submission</td>
+                  <td class="py-3">Initial proceedings manuscript submission due</td>
                 </tr>
                 <tr>
                   <th class="ps-4 py-3 bg-white border-end">August 22, 2026</th>
-                  <td class="py-3">Review decisions and revision requests</td>
+                  <td class="py-3">Proceedings decisions and revision requests</td>
                 </tr>
                 <tr>
                   <th class="ps-4 py-3 bg-light border-end">August 25, 2026</th>
@@ -336,6 +385,10 @@
                 <tr>
                   <th class="ps-4 py-3 bg-white border-end">August 27, 2026</th>
                   <td class="py-3">Final proceedings package submitted to MICCAI</td>
+                </tr>
+                <tr>
+                  <th class="ps-4 py-3 bg-light border-end">September 15, 2026</th>
+                  <td class="py-3">Public Method Overview due</td>
                 </tr>
               </tbody>
             </table>
@@ -349,8 +402,17 @@
             <li>Author information.</li>
             <li>Abstract and keywords.</li>
             <li>External-resource disclosure.</li>
-            <li>Optional supplementary PDF.</li>
+            <li>One optional supplementary PDF, where additional material is necessary.</li>
           </ul>
+          <p>
+            Supplementary material must be submitted as a single self-contained PDF. It will be provided to reviewers and
+            may be made publicly available if the paper is accepted. Supplementary material must not be used to circumvent
+            the manuscript page limit or omit information necessary to understand the primary method.
+          </p>
+          <p>
+            Springer accepts supplementary PDFs, but the files must be final because its typesetters do not edit
+            supplementary material.
+          </p>
           <p>
             <a class="btn btn-amplifai btn-sm me-2" href="openreview-instructions.html"
               >OpenReview submission instructions</a
@@ -387,10 +449,52 @@
             <li>ORCIDs, where available.</li>
             <li>Signed Springer licence-to-publish form.</li>
           </ul>
-          <p>
-            Springer requires one clearly identified corresponding author. The corresponding author must sign the
-            licence-to-publish form on behalf of all authors. The author list, author order, and corresponding author must
-            be final before delivery to Springer.
+
+          <h3 class="display-font h5">Additional Springer requirements</h3>
+          <ul>
+            <li>
+              The manuscript must identify exactly one corresponding author and include that author&rsquo;s email address.
+            </li>
+            <li>
+              The corresponding author must sign the Springer licence-to-publish form on behalf of all authors.
+            </li>
+            <li>
+              The licence-to-publish form must be signed by hand and returned as a scanned PDF; digital signatures are
+              not accepted.
+            </li>
+            <li>
+              The final author list, author order, and corresponding author must be confirmed before delivery to
+              Springer. Authorship changes cannot be made after the paper has been delivered for publication.
+            </li>
+            <li>Word source files must be provided as macro-free <code>.docx</code> files. <code>.docm</code> files are not accepted.</li>
+            <li>
+              LaTeX submissions must include all <code>.tex</code>, <code>.bib</code> or <code>.bbl</code>, figure,
+              style, and other source files required to compile the manuscript.
+            </li>
+            <li>The final PDF must correspond exactly to the submitted source files.</li>
+            <li>
+              Every manuscript must include a <strong>Disclosure of Interests</strong> section. Authors must either
+              declare relevant competing interests or explicitly state that they have no competing interests relevant to
+              the paper.
+            </li>
+            <li>
+              Authors must provide or review appropriate alternative text for figures, illustrations, and image-based
+              tables.
+            </li>
+            <li>
+              Authors are responsible for obtaining any necessary permission to reproduce third-party figures, tables,
+              text, or other copyrighted material.
+            </li>
+            <li>
+              The corresponding author must remain available to review the Springer proof. Proof corrections are limited
+              to production or typesetting errors and cannot introduce new methods, results, title changes, or authorship
+              changes.
+            </li>
+          </ul>
+          <p class="mb-0">
+            These are direct Springer requirements: source packages must include all relevant files; Word files cannot
+            contain macros; there must be one corresponding author; handwritten licence signatures are required;
+            competing-interest declarations are mandatory; and alt text is required for non-text content.
           </p>
 
           <h3 class="display-font h5">Author resources</h3>
@@ -418,8 +522,10 @@
               >
             </li>
             <li>
-              <a href="assets/downloads/proceedings/amplifai-camera-ready-metadata-form.pdf" download
-                >Camera-ready metadata collection form</a
+              <a
+                href="assets/downloads/proceedings/amplifai-camera-ready-metadata-form.docx"
+                download
+                >Camera-ready metadata form</a
               >
             </li>
           </ul>
