@@ -1,4 +1,4 @@
-/* AMPLIFAI challenge site — layout & theme */
+/* AMPLIFAI challenge site - layout & theme */
 :root {
   --amplifai-ink: #0b1220;
   --amplifai-muted: #475569;
@@ -7,8 +7,16 @@
   --amplifai-surface: #f8fafc;
   --amplifai-border: #e2e8f0;
   --amplifai-hero-gradient: linear-gradient(135deg, #0b1220 0%, #134e4a 48%, #0e7490 100%);
-  --amplifai-navbar-height: 4.5rem;
+  --amplifai-navbar-top-height: 3.5rem;
+  --amplifai-navbar-nav-height: 2.625rem;
+  --amplifai-navbar-height: calc(var(--amplifai-navbar-top-height) + var(--amplifai-navbar-nav-height));
   --amplifai-banner-height: 3.25rem;
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --amplifai-navbar-height: var(--amplifai-navbar-top-height);
+  }
 }
 
 html {
@@ -45,6 +53,59 @@ h3,
   height: 2.15rem;
   width: auto;
   display: block;
+}
+
+.site-header {
+  z-index: 1030;
+}
+
+.site-header-top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: var(--amplifai-navbar-top-height);
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+.site-header-nav {
+  padding: 0;
+  background: var(--amplifai-surface);
+}
+
+.site-header-nav-links {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .site-header-nav .navbar-collapse {
+    display: flex !important;
+  }
+
+  .site-header-nav-links .nav-link {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-header-nav {
+    border-bottom: none !important;
+  }
+
+  .site-header-nav .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-header-nav .navbar-collapse {
+    background: #fff;
+    border-bottom: 1px solid var(--amplifai-border);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -200,6 +261,63 @@ footer.site-footer a:hover {
   max-width: 42rem;
 }
 
+.faq-intro {
+  max-width: 42rem;
+}
+
+.faq-section-heading {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--amplifai-ink);
+  margin: 0 0 1rem;
+}
+
+.faq-list {
+  max-width: 46rem;
+}
+
+.faq-contact-card {
+  max-width: 46rem;
+  overflow: hidden;
+}
+
+.faq-contact-card-body {
+  padding: 1.5rem;
+}
+
+.faq-page .communication-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.faq-contact-heading {
+  font-size: 1.35rem;
+}
+
+.faq-contact-email {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.faq-figure {
+  max-width: 46rem;
+  margin: 1.25rem 0 0;
+}
+
+.faq-figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--amplifai-border);
+  border-radius: 0.5rem;
+}
+
+.faq-figure figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  color: var(--amplifai-muted);
+}
+
 .communications-list {
   border: 1px solid var(--amplifai-border);
   border-radius: 0.5rem;
@@ -251,6 +369,18 @@ footer.site-footer a:hover {
   align-items: baseline;
   flex: 1;
   min-width: 0;
+}
+
+.communication-meta.faq-question-meta {
+  display: block;
+  flex: 1;
+  min-width: 0;
+}
+
+.communication-meta.faq-question-meta .communication-subject {
+  display: block;
+  line-height: 1.5;
+  white-space: normal;
 }
 
 .communication-chevron {
@@ -311,6 +441,11 @@ footer.site-footer a:hover {
 .communication-body ul {
   margin-bottom: 1rem;
   padding-left: 1.25rem;
+}
+
+.communication-body ol {
+  margin-bottom: 1rem;
+  padding-left: 1.35rem;
 }
 
 .communication-body li {
@@ -517,7 +652,8 @@ footer.site-footer a:hover {
 
 .organizers-intro {
   margin-bottom: 0;
-  max-width: 42rem;
+  max-width: none;
+  line-height: 1.65;
 }
 
 .organizers-miccai-banner {
@@ -558,7 +694,15 @@ footer.site-footer a:hover {
 }
 
 .organizers-funding-list {
-  padding-left: 1.25rem;
+  padding-left: 2rem;
+  list-style-position: outside;
+  max-width: none;
+}
+
+.organizers-funding-list li {
+  display: list-item;
+  padding-left: 0.35rem;
+  line-height: 1.65;
 }
 
 .organizers-funding-list li + li {
@@ -673,7 +817,8 @@ footer.site-footer a:hover {
     padding-top: 0 !important;
   }
 
-  /* Navbar is fixed on screen; in print, static flow so it appears once (top of p.1), not on every sheet */
+  /* Header is fixed on screen; in print, static flow so it appears once (top of p.1), not on every sheet */
+  .site-header,
   nav.navbar,
   .sticky-header {
     position: static !important;

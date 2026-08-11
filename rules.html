@@ -23,9 +23,10 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand py-1" href="index.html" aria-label="AMPLIFAI - Home">
+    <header class="site-header fixed-top bg-white shadow-sm">
+      <div class="site-header-top border-bottom">
+        <div class="container site-header-top-inner">
+          <a class="navbar-brand py-0" href="index.html" aria-label="AMPLIFAI - Home">
           <img
             src="assets/img/logo-mini-light.svg"
             alt=""
@@ -35,29 +36,7 @@
             decoding="async"
           />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
-            <li class="nav-item"><a class="nav-link" href="background.html">Background</a></li>
-            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="rules.html">Terms</a></li>
-            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
-            <li class="nav-item"><a class="nav-link" href="papers.html">Papers</a></li>
-            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
-            <li class="nav-item"><a class="nav-link" href="communications.html">Communications</a></li>
-          </ul>
-          <div class="d-flex flex-wrap gap-2">
+          <div class="site-header-actions d-none d-lg-flex flex-wrap gap-2">
             <a
               class="btn btn-amplifai btn-sm px-3"
               href="https://www.codabench.org/competitions/14290/"
@@ -80,9 +59,60 @@
               >Submission Sample</a
             >
           </div>
+          <button
+            class="navbar-toggler site-header-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#siteNavCollapse"
+            aria-controls="siteNavCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </div>
-    </nav>
+      <nav class="site-header-nav navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="siteNavCollapse">
+            <ul class="navbar-nav site-header-nav-links me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="background.html">Background</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="rules.html">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
+            <li class="nav-item"><a class="nav-link" href="papers.html">Papers</a></li>
+            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
+            <li class="nav-item"><a class="nav-link" href="communications.html">Communications</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          </ul>
+            <div class="site-header-actions site-header-actions--mobile d-lg-none pb-3 pt-1">
+              <a
+                class="btn btn-amplifai btn-sm px-3"
+                href="https://www.codabench.org/competitions/14290/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Codabench</a
+              >
+              <a
+                class="btn btn-amplifai btn-sm px-3"
+                href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download Data</a
+              >
+              <a
+                class="btn btn-amplifai btn-sm px-3"
+                href="https://github.com/UM2ii/amplifai-codabench"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Submission Sample</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <div class="announcement-banner" role="status">
       <div class="container text-center">
@@ -197,9 +227,9 @@
             >Competition on Codabench</a
           >
           ·
-          <a href="https://docs.codabench.org/" target="_blank" rel="noopener noreferrer">Codabench documentation</a>
-          ·
           <a href="rules.html">Terms &amp; Conditions</a>
+          ·
+          <a href="faq.html">FAQ</a>
           ·
           <a href="mailto:amplifai@som.umaryland.edu">Contact</a>
         </p>

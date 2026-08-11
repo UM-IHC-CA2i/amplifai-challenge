@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAQ - AMPLIFAI Challenge</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header fixed-top bg-white shadow-sm">
+      <div class="site-header-top border-bottom">
+        <div class="container site-header-top-inner">
+          <a class="navbar-brand py-0" href="index.html" aria-label="AMPLIFAI - Home">
+          <img
+            src="assets/img/logo-mini-light.svg"
+            alt=""
+            width="200"
+            height="56"
+            class="navbar-brand-logo"
+            decoding="async"
+          />
+        </a>
+          <div class="site-header-actions d-none d-lg-flex flex-wrap gap-2">
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://www.codabench.org/competitions/14290/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Codabench</a
+            >
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download Data</a
+            >
+            <a
+              class="btn btn-amplifai btn-sm px-3"
+              href="https://github.com/UM2ii/amplifai-codabench"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Submission Sample</a
+            >
+          </div>
+          <button
+            class="navbar-toggler site-header-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#siteNavCollapse"
+            aria-controls="siteNavCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+      <nav class="site-header-nav navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="siteNavCollapse">
+            <ul class="navbar-nav site-header-nav-links me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link" href="background.html">Background</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+            <li class="nav-item"><a class="nav-link" href="rules.html">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="starter-kit.html">Starter kit</a></li>
+            <li class="nav-item"><a class="nav-link" href="papers.html">Papers</a></li>
+            <li class="nav-item"><a class="nav-link" href="organizers.html">Organizers</a></li>
+            <li class="nav-item"><a class="nav-link" href="communications.html">Communications</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="faq.html">FAQ</a></li>
+          </ul>
+            <div class="site-header-actions site-header-actions--mobile d-lg-none pb-3 pt-1">
+              <a
+                class="btn btn-amplifai btn-sm px-3"
+                href="https://www.codabench.org/competitions/14290/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Codabench</a
+              >
+              <a
+                class="btn btn-amplifai btn-sm px-3"
+                href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download Data</a
+              >
+              <a
+                class="btn btn-amplifai btn-sm px-3"
+                href="https://github.com/UM2ii/amplifai-codabench"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Submission Sample</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="announcement-banner" role="status">
+      <div class="container text-center">
+        <a class="announcement-banner-link" href="communications.html#model-submission-opens-july-31">
+          Important Notice, Please Read: July 31, 2026 - Model submission open for evaluation phase
+        </a>
+      </div>
+    </div>
+
+    <main class="container section-block faq-page">
+      <h1 class="display-font fw-bold mb-3">Frequently asked questions</h1>
+      <p class="text-muted-amplifai faq-intro mb-4">
+        Answers to common questions about model inputs, submissions, and participation in the AMPLIFAI challenge.
+        For official announcements, see the <a href="communications.html">Communications</a> page.
+      </p>
+
+      <h2 class="faq-section-heading">Model inputs &amp; submissions</h2>
+      <div class="communications-list faq-list mb-5" id="faqList">
+        <div class="communication-item anchor-offset" id="inference-inputs">
+          <h3 class="accordion-header" id="heading-inference-inputs">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-inference-inputs"
+              aria-expanded="false"
+              aria-controls="faq-inference-inputs"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject"
+                  >Are feature-level masks and clinical or imaging metadata valid model inputs at inference
+                  time?</span
+                >
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-inference-inputs"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-inference-inputs"
+            data-bs-parent="#faqList"
+          >
+            <div class="communication-body">
+              <p>
+                <strong>No.</strong> At inference time, the intended inputs are the multi-phase computed tomography
+                (CT) volume and the lesion segmentation only. The task is to characterize a provided lesion on
+                multi-phase CT.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="communication-item anchor-offset" id="submission-bundling">
+          <h3 class="accordion-header" id="heading-submission-bundling">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-submission-bundling"
+              aria-expanded="false"
+              aria-controls="faq-submission-bundling"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject"
+                  >May teams include publicly released feature masks or metadata in their Codabench submission
+                  archive?</span
+                >
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-submission-bundling"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-submission-bundling"
+            data-bs-parent="#faqList"
+          >
+            <div class="communication-body">
+              <p>
+                <strong>Yes.</strong> For development submissions evaluated on the public validation cases, you may
+                bundle the publicly released feature masks and metadata in your submission archive. Please be mindful
+                of submission size limits: Codabench enforces a <strong>7&nbsp;GB</strong> limit on competition
+                submissions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="communication-item anchor-offset" id="local-validation">
+          <h3 class="accordion-header" id="heading-local-validation">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-local-validation"
+              aria-expanded="false"
+              aria-controls="faq-local-validation"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject"
+                  >Should models be built and validated using only multi-phase CT volumes and the lesion mask?</span
+                >
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-local-validation"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-local-validation"
+            data-bs-parent="#faqList"
+          >
+            <div class="communication-body">
+              <p>
+                <strong>Yes.</strong> Models should be designed, trained, and locally validated so that at inference
+                time they take only multi-phase CT volumes and the supporting lesion segmentation as input, matching
+                the current Codabench evaluation environment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="communication-item anchor-offset" id="private-test-inputs">
+          <h3 class="accordion-header" id="heading-private-test-inputs">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-private-test-inputs"
+              aria-expanded="false"
+              aria-controls="faq-private-test-inputs"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject"
+                  >Will the private test set provide the same inputs as the Codabench validation environment?</span
+                >
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-private-test-inputs"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-private-test-inputs"
+            data-bs-parent="#faqList"
+          >
+            <div class="communication-body">
+              <p>
+                <strong>Yes.</strong> The validation and test phases run the same evaluation framework. The only
+                difference is the underlying cases: the test phase uses a held-out private test set. The input format
+                is unchanged - multi-phase CT volumes and a lesion segmentation for each case.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="communication-item anchor-offset" id="feature-annotations-training">
+          <h3 class="accordion-header" id="heading-feature-annotations-training">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-feature-annotations-training"
+              aria-expanded="false"
+              aria-controls="faq-feature-annotations-training"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject"
+                  >Are feature-level annotations intended only for training supervision?</span
+                >
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-feature-annotations-training"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-feature-annotations-training"
+            data-bs-parent="#faqList"
+          >
+            <div class="communication-body">
+              <p>
+                <strong>Yes.</strong> Feature-level annotations are provided for training supervision only. They are
+                not supplied as inference-time inputs on Codabench. See also the
+                <a href="data.html">Data page</a> and
+                <a href="starter-kit.html">Starter kit</a> for dataset and submission details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="faq-section-heading">Codabench &amp; evaluation</h2>
+      <div class="communications-list faq-list mb-5" id="faqEvalList">
+        <div class="communication-item anchor-offset" id="add-to-leaderboard">
+          <h3 class="accordion-header" id="heading-add-to-leaderboard">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-add-to-leaderboard"
+              aria-expanded="false"
+              aria-controls="faq-add-to-leaderboard"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject">How do I add a finished submission to the leaderboard?</span>
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-add-to-leaderboard"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-add-to-leaderboard"
+            data-bs-parent="#faqEvalList"
+          >
+            <div class="communication-body">
+              <p>
+                After a submission finishes running on Codabench, open the <strong>My Submissions</strong> tab for the
+                relevant phase. In the <strong>Actions</strong> column, click the green table-shaped button to add that
+                submission to the leaderboard.
+              </p>
+              <figure class="faq-figure">
+                <img
+                  src="assets/img/faq-add-to-leaderboard.png"
+                  alt="Codabench My Submissions tab showing the green add-to-leaderboard button in the Actions column"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  On Codabench: (1) open <strong>My Submissions</strong>, then (2) click the green table icon in
+                  <strong>Actions</strong> for a finished submission.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="communication-item anchor-offset" id="validation-phase-closed">
+          <h3 class="accordion-header" id="heading-validation-phase-closed">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-validation-phase-closed"
+              aria-expanded="false"
+              aria-controls="faq-validation-phase-closed"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject">When did the Codabench validation phase close?</span>
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-validation-phase-closed"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-validation-phase-closed"
+            data-bs-parent="#faqEvalList"
+          >
+            <div class="communication-body">
+              <p>
+                The Codabench validation phase closed on <strong>July 31, 2026</strong>, when the evaluation (test)
+                phase opened. New validation-phase submissions are no longer accepted. See the
+                <a href="communications.html#model-submission-opens-july-31">July 31 announcement</a> and the
+                <a href="timeline.html">Timeline</a> for details.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="communication-item anchor-offset" id="run-validation-locally">
+          <h3 class="accordion-header" id="heading-run-validation-locally">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-run-validation-locally"
+              aria-expanded="false"
+              aria-controls="faq-run-validation-locally"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject"
+                  >How can I run validation locally now that the validation phase is closed?</span
+                >
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-run-validation-locally"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-run-validation-locally"
+            data-bs-parent="#faqEvalList"
+          >
+            <div class="communication-body">
+              <p>
+                You can reproduce validation-phase evaluation on your own machine using the public validation cases and
+                the same tooling Codabench uses:
+              </p>
+              <ol>
+                <li>
+                  Download the AMPLIFAI dataset from
+                  <a
+                    href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Hugging Face</a
+                  >.
+                </li>
+                <li>
+                  Build the Docker container used for evaluation:
+                  <code>codalab/codalab-legacy:gpu310</code> (see
+                  <a
+                    href="https://github.com/codalab/codalab-dockers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >codalab/codalab-dockers</a
+                  >).
+                </li>
+                <li>
+                  Use the official evaluation script from the
+                  <a
+                    href="https://github.com/UM2ii/amplifai-codabench/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >submission template and guide on GitHub</a
+                  >.
+                </li>
+                <li>Ingest the evaluation script and the demarcated validation-set cases.</li>
+                <li>Ingest your model and evaluate performance.</li>
+              </ol>
+              <p class="mb-0">
+                For step-by-step setup, see the <a href="starter-kit.html">Starter kit</a> and the
+                <a href="data.html">Data page</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="faq-section-heading">Getting help</h2>
+      <div class="communications-list faq-list mb-4" id="faqHelpList">
+        <div class="communication-item anchor-offset" id="contact-organizers">
+          <h3 class="accordion-header" id="heading-contact-organizers">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-contact-organizers"
+              aria-expanded="false"
+              aria-controls="faq-contact-organizers"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject">How do I contact the organizing team?</span>
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-contact-organizers"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-contact-organizers"
+            data-bs-parent="#faqHelpList"
+          >
+            <div class="communication-body">
+              <p>
+                Email the AMPLIFAI organizers at
+                <a href="mailto:amplifai@som.umaryland.edu">amplifai@som.umaryland.edu</a>. Include your team name and
+                a clear description of your question. For dataset access, download, or registration issues, use the
+                same address.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="communication-item anchor-offset" id="submission-format">
+          <h3 class="accordion-header" id="heading-submission-format">
+            <button
+              class="communication-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq-submission-format"
+              aria-expanded="false"
+              aria-controls="faq-submission-format"
+            >
+              <span class="communication-meta faq-question-meta">
+                <span class="communication-subject">Where can I find submission format and getting-started guidance?</span>
+              </span>
+              <span class="communication-chevron" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </h3>
+          <div
+            id="faq-submission-format"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-submission-format"
+            data-bs-parent="#faqHelpList"
+          >
+            <div class="communication-body">
+              <p>
+                Start with the <a href="starter-kit.html">Starter kit</a> on this site. For a reference implementation
+                and packaging layout, see the
+                <a
+                  href="https://github.com/UM2ii/amplifai-codabench"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >submission sample on GitHub</a
+                >. Submit models through the
+                <a
+                  href="https://www.codabench.org/competitions/14290/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AMPLIFAI competition on Codabench</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="card card-amplifai faq-contact-card anchor-offset" id="contact">
+        <div class="faq-contact-card-body">
+          <h2 class="faq-contact-heading display-font fw-bold mb-2">Contact</h2>
+          <p class="text-muted-amplifai mb-3">
+            Questions not covered here? Reach out to the organizing team and we will get back to you as soon as we can.
+          </p>
+          <p class="mb-0">
+            <a class="faq-contact-email" href="mailto:amplifai@som.umaryland.edu">amplifai@som.umaryland.edu</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container text-center">
+        <p class="mb-1"><span id="y"></span> AMPLIFAI Challenge</p>
+        <p class="mb-0">
+          <a href="https://www.codabench.org/competitions/14290/" target="_blank" rel="noopener noreferrer"
+            >Competition on Codabench</a
+          >
+          ·
+          <a href="rules.html">Terms &amp; Conditions</a>
+          ·
+          <a href="faq.html">FAQ</a>
+          ·
+          <a href="mailto:amplifai@som.umaryland.edu">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("y").textContent = "© " + new Date().getFullYear();
+
+      (function () {
+        var hash = window.location.hash.replace(/^#/, "");
+        if (!hash) return;
+
+        var item = document.getElementById(hash);
+        if (!item) return;
+
+        var panel = item.querySelector(".accordion-collapse");
+        var toggle = item.querySelector(".communication-toggle");
+        if (!panel || !toggle) return;
+
+        panel.classList.add("show");
+        toggle.classList.remove("collapsed");
+        toggle.setAttribute("aria-expanded", "true");
+      })();
+    </script>
+  </body>
+</html>
