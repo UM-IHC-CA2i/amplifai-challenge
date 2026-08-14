@@ -646,6 +646,24 @@ footer.site-footer a:hover {
   font-weight: 600;
 }
 
+.papers-bibtex {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.15rem;
+  overflow-x: auto;
+  border: 1px solid var(--amplifai-border);
+  border-radius: 0.5rem;
+  background: var(--amplifai-surface);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--amplifai-ink);
+}
+
+.papers-bibtex code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: pre;
+}
+
 .organizers-page-title {
   margin-bottom: 1rem;
 }
