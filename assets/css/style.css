@@ -484,6 +484,33 @@ footer.site-footer a:hover {
   width: 11rem;
 }
 
+.winners-section {
+  background: linear-gradient(180deg, #ecfeff 0%, #f8fafc 100%);
+  border-top: 3px solid var(--amplifai-accent);
+  border-bottom: 1px solid var(--amplifai-border);
+}
+
+.table-winners th,
+.table-winners td {
+  vertical-align: top;
+  color: var(--amplifai-ink);
+}
+
+.table-winners thead th {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.table-winners tbody th[scope="row"] {
+  font-weight: 600;
+  white-space: nowrap;
+  width: 6rem;
+}
+
+.table-winners tbody td {
+  line-height: 1.55;
+}
+
 .rules-prose {
   max-width: 46rem;
 }
