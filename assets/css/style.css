@@ -520,6 +520,267 @@ footer.site-footer a:hover {
   border-bottom: 1px solid var(--amplifai-border);
 }
 
+.challenge-glance {
+  background: #fff;
+}
+
+.challenge-glance-intro {
+  display: grid;
+  gap: 0.75rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.challenge-eyebrow,
+.global-reach-kicker,
+.best-paper-kicker {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.challenge-eyebrow {
+  color: var(--amplifai-accent-deep);
+}
+
+.challenge-glance-copy {
+  max-width: 46rem;
+  line-height: 1.65;
+}
+
+@media (min-width: 992px) {
+  .challenge-glance-intro {
+    grid-template-columns: minmax(15rem, 0.8fr) minmax(0, 1.2fr);
+    align-items: end;
+  }
+}
+
+.challenge-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  height: 100%;
+}
+
+.challenge-metric-card {
+  position: relative;
+  min-height: 9.5rem;
+  padding: 1.35rem 1.4rem;
+  overflow: hidden;
+  border: 1px solid var(--amplifai-border);
+  border-radius: 0.65rem;
+  background: #fff;
+  box-shadow: 0 0.35rem 1.1rem rgba(15, 23, 42, 0.05);
+}
+
+.challenge-metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  background: linear-gradient(90deg, var(--amplifai-accent), #14b8a6);
+}
+
+.challenge-metric-card--wide {
+  grid-column: 1 / -1;
+  min-height: 8.5rem;
+}
+
+.challenge-metric-value {
+  margin: 0 0 0.45rem;
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--amplifai-ink);
+}
+
+.challenge-metric-value span {
+  font-size: 0.55em;
+  letter-spacing: -0.02em;
+}
+
+.challenge-metric-label {
+  margin: 0;
+  max-width: 15rem;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: var(--amplifai-muted);
+}
+
+.global-reach-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: linear-gradient(145deg, #0b1220 0%, #134e4a 100%);
+  color: #e2e8f0;
+}
+
+.global-reach-heading h3 {
+  color: #fff;
+}
+
+.global-reach-heading p:last-child {
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.global-reach-kicker {
+  color: #67e8f9;
+}
+
+.reach-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 0.75rem;
+}
+
+.reach-globe-outline,
+.reach-grid-line {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.reach-globe-outline {
+  stroke: rgba(255, 255, 255, 0.42);
+  stroke-width: 2;
+}
+
+.reach-grid-line {
+  stroke: rgba(255, 255, 255, 0.16);
+  stroke-width: 1.25;
+}
+
+.reach-marker {
+  fill: #fef08a;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.reach-marker--paper {
+  fill: #67e8f9;
+}
+
+.reach-marker-text {
+  fill: var(--amplifai-ink);
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.award-location-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 0.85rem;
+  margin-top: auto;
+}
+
+.award-location-list > div {
+  display: grid;
+  grid-template-columns: 1.65rem minmax(0, 1fr);
+  column-gap: 0.55rem;
+  align-items: start;
+}
+
+.award-location-list span {
+  grid-row: 1 / span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 999px;
+  background: #fef08a;
+  color: var(--amplifai-ink);
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.award-location-list .award-location-paper {
+  background: #67e8f9;
+}
+
+.award-location-list strong {
+  color: #fff;
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.award-location-list small {
+  color: #94a3b8;
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.challenge-glance-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--amplifai-border);
+}
+
+.best-paper-card {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.35rem 1.3rem;
+  border: 1px solid #fde68a;
+  border-left: 4px solid #eab308;
+  border-radius: 0.55rem;
+  background: #fefce8;
+}
+
+.best-paper-kicker {
+  margin: 0 0 0.45rem;
+  color: #854d0e;
+}
+
+.best-paper-title {
+  margin: 0 0 0.45rem;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.best-paper-title a {
+  color: var(--amplifai-ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.best-paper-title a:hover,
+.best-paper-title a:focus {
+  color: var(--amplifai-accent-deep);
+}
+
+.best-paper-meta {
+  color: var(--amplifai-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 575.98px) {
+  .challenge-metrics-grid,
+  .award-location-list {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge-metric-card--wide {
+    grid-column: auto;
+  }
+
+  .challenge-metric-card {
+    min-height: auto;
+  }
+}
+
 .table-winners {
   width: 100%;
   min-width: 40rem;
