@@ -120,8 +120,8 @@
 
     <div class="announcement-banner" role="status">
       <div class="container text-center">
-        <a class="announcement-banner-link" href="communications.html#challenge-winners">
-          Important Notice: AMPLIFAI Challenge winners announced
+        <a class="announcement-banner-link" href="#challenge-at-a-glance">
+          AMPLIFAI 2026 concluded — final results, dataset, and proceedings remain available
         </a>
       </div>
     </div>
@@ -140,25 +140,141 @@
           />
         </h1>
         <p class="lead mb-4">
-          Official information site for the MICCAI 2026 AMPLIFAI competition. The challenge has officially concluded.
+          A MICCAI 2026 benchmark for clinically meaningful AI in LI-RADS assessment of liver lesions on multi-phase CT.
+          The challenge concluded in Strasbourg on October 1, 2026; the dataset, results, and proceedings remain open.
         </p>
-        <a class="btn btn-light btn-lg me-2 mb-2" href="#winners">View Winners</a>
+        <a class="btn btn-light btn-lg me-2 mb-2" href="#challenge-at-a-glance">See Challenge Results</a>
         <a
           class="btn btn-outline-light btn-lg me-2 mb-2"
           href="https://www.codabench.org/competitions/14290/"
           target="_blank"
           rel="noopener noreferrer"
-          >Open Codabench</a
+          >Codabench Archive</a
         >
         <a
           class="btn btn-outline-light btn-lg mb-2"
           href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
           target="_blank"
           rel="noopener noreferrer"
-          >Download Data</a
+          >Explore Dataset</a
         >
       </div>
     </header>
+
+    <section class="section-block challenge-glance" id="challenge-at-a-glance">
+      <div class="container">
+        <div class="challenge-glance-intro">
+          <div>
+            <p class="challenge-eyebrow mb-2">Post-challenge snapshot</p>
+            <h2 class="section-title anchor-offset mb-3">Challenge at a glance</h2>
+          </div>
+          <p class="text-muted-amplifai challenge-glance-copy mb-0">
+            AMPLIFAI brought together an international medical-imaging AI community around an open benchmark for
+            multi-phase CT and LI-RADS categorization. The challenge resources remain available for continued research
+            and reproducibility.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch mt-1">
+          <div class="col-lg-7">
+            <div class="challenge-metrics-grid" aria-label="AMPLIFAI participation metrics">
+              <div class="challenge-metric-card">
+                <p class="challenge-metric-value">1,267</p>
+                <p class="challenge-metric-label">Hugging Face dataset downloads</p>
+              </div>
+              <div class="challenge-metric-card">
+                <p class="challenge-metric-value">80</p>
+                <p class="challenge-metric-label">approved Codabench users</p>
+              </div>
+              <div class="challenge-metric-card">
+                <p class="challenge-metric-value">45</p>
+                <p class="challenge-metric-label">submitters with valid predictions</p>
+              </div>
+              <div class="challenge-metric-card">
+                <p class="challenge-metric-value">144</p>
+                <p class="challenge-metric-label">test-phase submissions</p>
+              </div>
+              <div class="challenge-metric-card challenge-metric-card--wide">
+                <p class="challenge-metric-value">55 <span>institutions</span></p>
+                <p class="challenge-metric-label">represented across 29 countries</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="global-reach-card h-100">
+              <div class="global-reach-heading">
+                <p class="global-reach-kicker mb-1">Global reach</p>
+                <h3 class="h5 mb-2">Award locations</h3>
+                <p class="mb-0">
+                  Award recipients spanned four cities; challenge participation extended across 29 countries.
+                </p>
+              </div>
+
+              <svg
+                class="reach-map"
+                viewBox="0 0 640 320"
+                role="img"
+                aria-labelledby="reach-map-title reach-map-desc"
+              >
+                <title id="reach-map-title">AMPLIFAI award locations</title>
+                <desc id="reach-map-desc">
+                  Schematic globe marking Atlanta, Paris, Kharagpur, and Shanghai. Participants represented 29 countries
+                  overall.
+                </desc>
+                <ellipse class="reach-globe-outline" cx="320" cy="160" rx="270" ry="130" />
+                <ellipse class="reach-grid-line" cx="320" cy="160" rx="230" ry="72" />
+                <path class="reach-grid-line" d="M50 160h540" />
+                <path class="reach-grid-line" d="M320 30c-78 48-78 212 0 260" />
+                <path class="reach-grid-line" d="M320 30c78 48 78 212 0 260" />
+
+                <g class="reach-marker-group" transform="translate(502 115)">
+                  <circle class="reach-marker" r="17" />
+                  <text class="reach-marker-text" x="0" y="1">1</text>
+                </g>
+                <g class="reach-marker-group" transform="translate(324 89)">
+                  <circle class="reach-marker" r="17" />
+                  <text class="reach-marker-text" x="0" y="1">2</text>
+                </g>
+                <g class="reach-marker-group" transform="translate(193 111)">
+                  <circle class="reach-marker" r="17" />
+                  <text class="reach-marker-text" x="0" y="1">3</text>
+                </g>
+                <g class="reach-marker-group" transform="translate(451 128)">
+                  <circle class="reach-marker reach-marker--paper" r="17" />
+                  <text class="reach-marker-text" x="0" y="1">P</text>
+                </g>
+              </svg>
+
+              <div class="award-location-list" aria-label="Award locations legend">
+                <div><span>1</span><strong>Fudan University</strong><small>Shanghai, China</small></div>
+                <div><span>2</span><strong>EPITA</strong><small>Paris, France</small></div>
+                <div><span>3</span><strong>Emory / Georgia Tech</strong><small>Atlanta, USA</small></div>
+                <div><span class="award-location-paper">P</span><strong>IIT Kharagpur</strong><small>Kharagpur, India</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="challenge-glance-actions">
+          <a class="btn btn-amplifai btn-sm" href="#winners">View winners &amp; awards</a>
+          <a
+            class="btn btn-outline-secondary btn-sm"
+            href="https://huggingface.co/datasets/UM-IHC-CA2i/AMPLIFAI"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Dataset</a
+          >
+          <a
+            class="btn btn-outline-secondary btn-sm"
+            href="https://www.codabench.org/competitions/14290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Codabench</a
+          >
+        </div>
+      </div>
+    </section>
 
     <section class="section-block winners-section" id="winners">
       <div class="container">
@@ -202,6 +318,21 @@
             </tbody>
           </table>
         </div>
+
+        <div class="best-paper-card">
+          <p class="best-paper-kicker">Best Proceedings Paper</p>
+          <h3 class="best-paper-title">
+            <a
+              href="https://papers.miccai.org/miccai-2026-sat/AMPLIFAI_004.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Shortcut-Aware Validation for LI-RADS Categorisation on Multi-Phase CT</a
+            >
+          </h3>
+          <p class="best-paper-meta mb-0">
+            Harsh Vardhan, Sakshi Suryawanshi, and Subhamoy Mandal · Indian Institute of Technology Kharagpur
+          </p>
+        </div>
       </div>
     </section>
 
@@ -209,13 +340,14 @@
       <div class="container">
         <h2 class="section-title anchor-offset">MICCAI 2026 Satellite Event</h2>
         <p class="text-muted-amplifai mb-3">
-          Join us in person at MICCAI 2026 in Strasbourg on <strong>Thursday, October 1, 2026</strong>,
-          8:00&ndash;10:00 in the <strong>Amsterdam room</strong> for the AMPLIFAI challenge session, including
-          keynotes, winner talks, proceedings presentations, and awards.
+          The AMPLIFAI Challenge concluded at MICCAI 2026 in Strasbourg on <strong>Thursday, October 1, 2026</strong>.
+          The satellite session included the challenge overview, featured talks, presentations from the top three teams,
+          the Best Proceedings Paper talk, poster presentations, and awards.
         </p>
-        <p class="mb-0">
-          <a class="btn btn-amplifai btn-sm" href="timeline.html#satellite-event">View full session program</a>
-        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-amplifai btn-sm" href="timeline.html#satellite-event">View session program</a>
+          <a class="btn btn-outline-secondary btn-sm" href="#publications">Proceedings &amp; resources</a>
+        </div>
       </div>
     </section>
 
@@ -305,12 +437,12 @@
 
     <section class="section-block" id="overview">
       <div class="container">
-        <h2 class="section-title anchor-offset">Welcome</h2>
+        <h2 class="section-title anchor-offset">About the Challenge</h2>
         <p class="text-muted-amplifai mb-0">
-          Welcome to the Annotated Multi-Phase Liver Imaging for Artificial Intelligence (AMPLIFAI) Challenge, a Medical
-          Image Computing and Computer Assisted Intervention (MICCAI) 2026 benchmark for clinically meaningful artificial
-          intelligence (AI) in liver lesion assessment on multi-phase computed tomography (CT). AMPLIFAI is built around
-          the
+          The Annotated Multi-Phase Liver Imaging for Artificial Intelligence (AMPLIFAI) Challenge was organized as a
+          Medical Image Computing and Computer Assisted Intervention (MICCAI) 2026 benchmark for clinically meaningful
+          artificial intelligence (AI) in liver lesion assessment on multi-phase computed tomography (CT). AMPLIFAI is
+          built around the
           <a
             href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/LI-RADS/LI-RADS-CT-MRI-2018-Core.pdf"
             target="_blank"
@@ -318,34 +450,33 @@
             >Liver Imaging Reporting and Data System (LI-RADS)&reg;</a
           >
           framework to support trustworthy and interpretable models for real-world hepatocellular carcinoma (HCC)
-          diagnosis.
+          diagnosis. The open dataset and challenge resources remain available for continued benchmarking and research.
         </p>
       </div>
     </section>
 
     <section class="section-block" id="task-overview">
       <div class="container">
-        <h2 class="section-title anchor-offset">Task Overview</h2>
+        <h2 class="section-title anchor-offset">Benchmark Task</h2>
         <p class="text-muted-amplifai mb-0">
-          The AMPLIFAI task is to classify the LI-RADS score of one pre-defined target lesion per case from multi-phase
-          CT.
-          Public training data is harmonized and preprocessed from four source datasets, with radiologist-provided lesion
-          segmentations and annotations. Final ranking is based solely on classification performance.
+          The AMPLIFAI benchmark task is to classify the LI-RADS score of one pre-defined target lesion per case from
+          multi-phase CT. Public training data is harmonized and preprocessed from four source datasets, with
+          radiologist-provided lesion segmentations and annotations. Final challenge ranking was based solely on
+          classification performance.
         </p>
       </div>
     </section>
 
     <section class="section-block" id="challenge-aim">
       <div class="container">
-        <h2 class="section-title anchor-offset">Challenge Aim</h2>
+        <h2 class="section-title anchor-offset">Challenge Design</h2>
         <p class="text-muted-amplifai mb-0">
-          The AMPLIFAI challenge invites the medical imaging community to develop AI models capable of classifying 
-          lesions across the full LI-RADS spectrum. Participants will be provided with training data containing
-          multi-phase CT volumes, lesion-level LI-RADS category labels, and voxel-level segmentations of key imaging
-          features (e.g., non-rim APHE, non-peripheral washout, and enhancing capsule) of the relevant liver lesion per
-          case. This unique dataset enables both end-to-end and feature-guided approaches to LI-RADS classification;
-          however, models will be evaluated solely on their predicted LI-RADS category, leaving participants free to
-          leverage the provided feature annotations however they see fit.
+          AMPLIFAI asked the medical imaging community to develop AI models capable of classifying lesions across the full
+          LI-RADS spectrum. Participants received multi-phase CT volumes, lesion-level LI-RADS category labels, and
+          voxel-level segmentations of key imaging features (e.g., non-rim APHE, non-peripheral washout, and enhancing
+          capsule) for the relevant liver lesion in each case. The dataset supports both end-to-end and feature-guided
+          approaches; challenge models were evaluated solely on their predicted LI-RADS category, leaving teams free to
+          use the feature annotations as appropriate for their methods.
         </p>
       </div>
     </section>
