@@ -76,6 +76,7 @@
         <div class="container">
           <div class="collapse navbar-collapse" id="siteNavCollapse">
             <ul class="navbar-nav site-header-nav-links me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="background.html">Background</a></li>
             <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
@@ -122,41 +123,76 @@
       </div>
     </div>
 
-    <main class="container section-block">
-      <h1 class="display-font fw-bold mb-4">Clinical Background</h1>
+    <main class="container section-block background-page">
+      <h1 class="display-font fw-bold mb-4">Background</h1>
 
-      <article class="rules-prose">
-        <h2 class="display-font h5">What is HCC?</h2>
-        <p>
-          Hepatocellular carcinoma (HCC) is the most common primary liver cancer. It arises predominantly in patients with
-          chronic liver disease or cirrhosis - a population that undergoes routine surveillance imaging. Critically, HCC
-          is one of the few cancers where imaging alone can establish a diagnosis; no biopsy is required. This is codified
-          in the LI-RADS framework.
-        </p>
+      <div class="background-overview-grid">
+        <section class="background-overview-column" aria-labelledby="clinical-context-heading">
+          <p class="background-eyebrow mb-2">Clinical context</p>
+          <h2 class="display-font h4 mb-4" id="clinical-context-heading">HCC and LI-RADS</h2>
 
-        <h2 class="display-font h5">What is LI-RADS?</h2>
-        <p>
-          LI-RADS (Liver Imaging Reporting and Data System) standardizes the description and categorization of liver
-          observations on contrast-enhanced CT and MRI in patients at high risk for HCC. It assigns each observation a
-          category based on imaging features.
-        </p>
-        <p>
-          The LI-RADS framework follows a strict clinical logic built on temporal analysis. Multiple contrast phases are
-          acquired: before contrast injection (non-contrast) and at successive time points after injection (arterial,
-          portal venous, and delayed) to capture how the lesion's enhancement changes over time relative to the surrounding
-          liver.
-        </p>
-        <p>
-          Please refer to the official
-          <a
-            href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/LI-RADS/LI-RADS-CT-MRI-2018-Core.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Liver Imaging Reporting and Data System (LI-RADS)&reg;</a
-          >
-          definition.
-        </p>
+          <h3 class="display-font h5">What is HCC?</h3>
+          <p>
+            Hepatocellular carcinoma (HCC) is the most common primary liver cancer. It arises predominantly in patients
+            with chronic liver disease or cirrhosis, a population that undergoes routine surveillance imaging. Critically,
+            HCC is one of the few cancers where imaging alone can establish a diagnosis; no biopsy is required.
+          </p>
 
+          <h3 class="display-font h5">What is LI-RADS?</h3>
+          <p>
+            LI-RADS (Liver Imaging Reporting and Data System) standardizes the description and categorization of liver
+            observations on contrast-enhanced CT and MRI in patients at high risk for HCC. It assigns observations to
+            categories based on imaging features.
+          </p>
+          <p>
+            The framework uses temporal enhancement across multiple contrast phases — non-contrast, arterial, portal
+            venous, and delayed — to characterize how a lesion changes relative to the surrounding liver.
+          </p>
+          <p class="mb-0">
+            See the official
+            <a
+              href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/LI-RADS/LI-RADS-CT-MRI-2018-Core.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Liver Imaging Reporting and Data System (LI-RADS)&reg;</a
+            >
+            definition.
+          </p>
+        </section>
+
+        <section class="background-overview-column background-overview-column--challenge" aria-labelledby="challenge-background-heading">
+          <p class="background-eyebrow mb-2">Challenge design</p>
+          <h2 class="display-font h4 mb-4" id="challenge-background-heading">The AMPLIFAI benchmark</h2>
+
+          <h3 class="display-font h5">About AMPLIFAI</h3>
+          <p>
+            The Annotated Multi-Phase Liver Imaging for Artificial Intelligence (AMPLIFAI) Challenge was organized as a
+            MICCAI 2026 benchmark for clinically meaningful AI in liver lesion assessment on multi-phase CT. AMPLIFAI
+            translates the LI-RADS clinical framework into a reproducible lesion-level classification benchmark.
+          </p>
+
+          <h3 class="display-font h5">Benchmark task</h3>
+          <p>
+            Participants predicted the LI-RADS category of one pre-defined target lesion per case from multi-phase CT.
+            Final challenge ranking was based solely on LI-RADS classification performance.
+          </p>
+
+          <h3 class="display-font h5">Dataset &amp; challenge design</h3>
+          <p class="mb-0">
+            Training data were harmonized and preprocessed from four source datasets and included multi-phase CT,
+            lesion-level LI-RADS labels, radiologist-provided lesion segmentations, and voxel-level annotations of key
+            imaging features including non-rim APHE, non-peripheral washout, and enhancing capsule. These annotations
+            supported both end-to-end and feature-guided approaches but were not separate challenge endpoints.
+          </p>
+        </section>
+      </div>
+
+      <div class="background-detail-heading">
+        <p class="background-eyebrow mb-2">Clinical framework</p>
+        <h2 class="display-font h3 mb-0">Understanding LI-RADS</h2>
+      </div>
+
+      <article class="rules-prose background-detail-prose">
         <h2 class="display-font h5">Category overview</h2>
         <div class="table-responsive mb-4">
           <table class="table table-bordered align-middle background-categories-table">

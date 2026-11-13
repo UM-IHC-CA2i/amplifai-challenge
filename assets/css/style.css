@@ -529,14 +529,16 @@ footer.site-footer a:hover {
 }
 
 .challenge-eyebrow,
-.best-paper-kicker {
+.best-paper-kicker,
+.background-eyebrow {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
-.challenge-eyebrow {
+.challenge-eyebrow,
+.background-eyebrow {
   color: var(--amplifai-accent-deep);
 }
 
@@ -581,39 +583,6 @@ footer.site-footer a:hover {
   color: var(--amplifai-muted);
 }
 
-.challenge-community-summary {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem 1.25rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--amplifai-border);
-}
-
-.challenge-community-label {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--amplifai-accent-deep);
-}
-
-.challenge-community-value {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.7rem;
-  align-items: baseline;
-  color: var(--amplifai-muted);
-}
-
-.challenge-community-value strong {
-  font-family: "Outfit", system-ui, sans-serif;
-  font-size: 1.05rem;
-  color: var(--amplifai-ink);
-}
-
 @media (max-width: 991.98px) {
   .challenge-metrics-band {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -626,6 +595,138 @@ footer.site-footer a:hover {
   .challenge-metric:nth-child(3),
   .challenge-metric:nth-child(4) {
     border-top: 1px solid var(--amplifai-border);
+  }
+}
+
+.participation-section {
+  background: #fff;
+}
+
+.participation-heading {
+  display: grid;
+  gap: 0.75rem 2rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.participation-copy {
+  max-width: 43rem;
+  line-height: 1.65;
+}
+
+.participation-figure {
+  overflow: hidden;
+  border: 1px solid var(--amplifai-border);
+  border-radius: 0.7rem;
+  background: #fff;
+}
+
+.participation-map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.participation-caption {
+  padding: 1rem 1.2rem 1.15rem;
+  border-top: 1px solid var(--amplifai-border);
+}
+
+.participation-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.participation-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--amplifai-ink);
+}
+
+.participation-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 999px;
+  background: #13747d;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px rgba(19, 116, 125, 0.2);
+}
+
+.participation-award {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.65rem;
+  height: 1.65rem;
+  padding: 0 0.3rem;
+  border-radius: 999px;
+  background: #f6c453;
+  color: var(--amplifai-ink);
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.participation-award--paper {
+  background: #33c7d4;
+}
+
+.background-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.background-overview-column {
+  padding: 1.6rem 1.7rem;
+  border: 1px solid var(--amplifai-border);
+  border-radius: 0.7rem;
+  background: #fff;
+}
+
+.background-overview-column--challenge {
+  background: var(--amplifai-surface);
+}
+
+.background-overview-column h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.55rem;
+}
+
+.background-overview-column h3:first-of-type {
+  margin-top: 0;
+}
+
+.background-overview-column p {
+  color: var(--amplifai-muted);
+  line-height: 1.65;
+}
+
+.background-detail-heading {
+  max-width: 56rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 2px solid var(--amplifai-accent);
+}
+
+.background-detail-prose {
+  max-width: 56rem;
+}
+
+@media (min-width: 992px) {
+  .participation-heading {
+    grid-template-columns: minmax(18rem, 0.9fr) minmax(0, 1.1fr);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .background-overview-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -676,12 +777,8 @@ footer.site-footer a:hover {
     border-top: 1px solid var(--amplifai-border);
   }
 
-  .challenge-community-summary {
-    align-items: flex-start;
-  }
-
-  .challenge-community-value {
-    width: 100%;
+  .participation-caption {
+    padding: 0.9rem 1rem 1rem;
   }
 }
 
